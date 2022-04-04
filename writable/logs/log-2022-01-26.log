@@ -1,0 +1,21 @@
+CRITICAL - 2022-01-26 11:43:04 --> Undefined variable $sisadifg
+#0 C:\xampp\htdocs\scm\app\Controllers\Delivery.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 193)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Delivery->finishpart()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Delivery))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-26 01:41:52 --> Undefined variable $lebar
+#0 C:\xampp\htdocs\scm\app\Controllers\Purchasing.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 145)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Purchasing->saveposup()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchasing))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-26 02:04:14 --> Undefined array key "noposup"
+#0 C:\xampp\htdocs\scm\app\Controllers\Warehouse.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 33)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Warehouse->confirm()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Warehouse))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

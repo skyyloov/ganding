@@ -1,0 +1,51 @@
+CRITICAL - 2022-01-08 10:14:03 --> syntax error, unexpected token "elseif"
+#0 C:\xampp\htdocs\scm\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('/purchasing/ked...')
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('/purchasing/ked...')
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-08 23:34:21 --> Undefined array key "cekbox2"
+#0 C:\xampp\htdocs\scm\app\Controllers\Purchasing.php(159): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 159)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Purchasing->kedatangan()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchasing))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-08 23:40:33 --> Undefined array key "qty_po"
+#0 C:\xampp\htdocs\scm\app\Controllers\Purchasing.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 165)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Purchasing->kedatangan()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchasing))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-08 23:43:34 --> Unsupported operand types: string + string
+#0 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Purchasing->kedatangan()
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchasing))
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-08 23:48:00 --> Unsupported operand types: string + string
+#0 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Purchasing->kedatangan()
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchasing))
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-08 10:53:18 --> Unclosed '{' on line 159 does not match ')'
+#0 C:\xampp\htdocs\scm\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\scm\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\scm\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-01-08 21:45:43 --> syntax error, unexpected token "return"
+#0 C:\xampp\htdocs\scm\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\scm\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\scm\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

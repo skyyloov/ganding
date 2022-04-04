@@ -1,0 +1,53 @@
+CRITICAL - 2022-01-29 01:23:21 --> mysqli_connect(): (HY000/2002): No connection could be made because the target machine actively refused it
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli_connect(...', 'C:\\xampp\\htdocs...', 51)
+#1 C:\xampp\htdocs\scm\app\Views\delivery.php(51): mysqli_connect('localhost', 'root', '', 'ganding')
+#2 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('delivery', Array, true)
+#5 C:\xampp\htdocs\scm\app\Controllers\Delivery.php(39): view('delivery', Array)
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Delivery->index()
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Delivery))
+#8 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-29 14:24:18 --> Undefined array key 1
+#0 C:\xampp\htdocs\scm\app\Controllers\Delivery.php(325): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 325)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Delivery->assyweld()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Delivery))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-29 14:26:09 --> Undefined array key 1
+#0 C:\xampp\htdocs\scm\app\Controllers\Delivery.php(325): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 325)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Delivery->assyweld()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Delivery))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-29 14:26:27 --> Undefined array key 3
+#0 C:\xampp\htdocs\scm\app\Controllers\Delivery.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 352)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Delivery->assyweld()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Delivery))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-29 14:46:05 --> Unsupported operand types: array * int
+#0 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Delivery->assyweld()
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Delivery))
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-29 15:03:36 --> Unsupported operand types: array & array
+#0 C:\xampp\htdocs\scm\app\Controllers\Delivery.php(311): App\Models\PoModel->getPartz('1')
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Delivery->assyweld()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Delivery))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-29 21:56:16 --> Undefined variable $delivsurjal
+#0 C:\xampp\htdocs\scm\app\Controllers\Delivery.php(478): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 478)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Delivery->assyweld()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Delivery))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

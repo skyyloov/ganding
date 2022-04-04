@@ -1,0 +1,14 @@
+CRITICAL - 2022-02-25 07:50:24 --> Undefined array key "qtykirim"
+#0 /home/n1775814/public_html/app/Controllers/Warehousefg.php(71): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/n1775814/public_html/system/CodeIgniter.php(824): App\Controllers\Warehousefg->delivsubcont()
+#2 /home/n1775814/public_html/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#3 /home/n1775814/public_html/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/n1775814/public_html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-25 20:07:29 --> Undefined array key "keterangan"
+#0 /home/n1775814/public_html/app/Controllers/Warehousefg.php(161): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/n1775814/public_html/system/CodeIgniter.php(824): App\Controllers\Warehousefg->kedatangan()
+#2 /home/n1775814/public_html/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#3 /home/n1775814/public_html/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/n1775814/public_html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

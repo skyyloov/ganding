@@ -1,0 +1,7 @@
+CRITICAL - 2022-01-07 00:30:44 --> Undefined array key "nama_supplier"
+#0 C:\xampp\htdocs\scm\app\Controllers\Purchasing.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 150)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Purchasing->kedatangan()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchasing))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

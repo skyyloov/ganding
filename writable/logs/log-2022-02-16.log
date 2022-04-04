@@ -1,0 +1,10 @@
+CRITICAL - 2022-02-16 03:10:01 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-16 04:03:38 --> Undefined variable $koneksi
+#0 C:\xampp\htdocs\scm\app\Controllers\Purchasing.php(457): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 457)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Purchasing->saverevisi()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchasing))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

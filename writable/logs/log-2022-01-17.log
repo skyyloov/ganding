@@ -1,0 +1,119 @@
+CRITICAL - 2022-01-17 03:29:41 --> Undefined array key 0
+#0 C:\xampp\htdocs\scm\app\Controllers\Production.php(240): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 240)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Production->input2()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-17 03:31:59 --> Unclosed '{' on line 236 does not match ')'
+#0 C:\xampp\htdocs\scm\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\scm\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\scm\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-01-17 04:50:06 --> syntax error, unexpected variable "$this"
+#0 C:\xampp\htdocs\scm\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\scm\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\scm\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-01-17 06:11:41 --> Undefined variable $planawal
+#0 C:\xampp\htdocs\scm\app\Controllers\Production.php(311): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 311)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Production->input2()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-17 06:39:29 --> There is no data to update.
+#0 C:\xampp\htdocs\scm\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\xampp\htdocs\scm\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#2 C:\xampp\htdocs\scm\system\BaseModel.php(656): CodeIgniter\Model->update('1', Array)
+#3 C:\xampp\htdocs\scm\app\Controllers\Production.php(406): CodeIgniter\BaseModel->save(Array)
+#4 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Production->input3()
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-17 06:42:31 --> There is no data to update.
+#0 C:\xampp\htdocs\scm\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\xampp\htdocs\scm\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#2 C:\xampp\htdocs\scm\system\BaseModel.php(656): CodeIgniter\Model->update('1', Array)
+#3 C:\xampp\htdocs\scm\app\Controllers\Production.php(460): CodeIgniter\BaseModel->save(Array)
+#4 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Production->input3()
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-17 19:27:35 --> There is no data to update.
+#0 C:\xampp\htdocs\scm\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\xampp\htdocs\scm\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#2 C:\xampp\htdocs\scm\system\BaseModel.php(656): CodeIgniter\Model->update('1', Array)
+#3 C:\xampp\htdocs\scm\app\Controllers\Production.php(309): CodeIgniter\BaseModel->save(Array)
+#4 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Production->input2()
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-17 22:14:44 --> Undefined constant "App\Controllers\request"
+#0 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Production->saveassy()
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-17 22:29:56 --> is_number is not a valid rule.
+#0 C:\xampp\htdocs\scm\system\Validation\Validation.php(285): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('is_number')
+#1 C:\xampp\htdocs\scm\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('qty', 'qty', '123', Array, Array)
+#2 C:\xampp\htdocs\scm\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\scm\app\Controllers\Production.php(72): CodeIgniter\Controller->validate(Array)
+#4 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Production->saveassy()
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-17 22:31:02 --> is_number is not a valid rule.
+#0 C:\xampp\htdocs\scm\system\Validation\Validation.php(285): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('is_number')
+#1 C:\xampp\htdocs\scm\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('qty', 'qty', '123', Array, Array)
+#2 C:\xampp\htdocs\scm\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\scm\app\Controllers\Production.php(73): CodeIgniter\Controller->validate(Array)
+#4 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Production->saveassy()
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-17 22:54:07 --> syntax error, unexpected token "}"
+#0 C:\xampp\htdocs\scm\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\scm\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\scm\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-01-17 22:54:43 --> mysqli_fetch_all(): Argument #1 ($result) must be of type mysqli_result, bool given
+#0 C:\xampp\htdocs\scm\app\Views\buatpart.php(5): mysqli_fetch_all(false, 1)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('buatpart', Array, true)
+#4 C:\xampp\htdocs\scm\app\Controllers\Part.php(55): view('buatpart', Array)
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->buatpart('event.php')
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-17 22:54:43 --> mysqli_fetch_all(): Argument #1 ($result) must be of type mysqli_result, bool given
+#0 C:\xampp\htdocs\scm\app\Views\buatpart.php(5): mysqli_fetch_all(false, 1)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('buatpart', Array, true)
+#4 C:\xampp\htdocs\scm\app\Controllers\Part.php(55): view('buatpart', Array)
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->buatpart('tmpls', 'month.html')
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

@@ -1,0 +1,217 @@
+CRITICAL - 2022-01-27 00:23:27 --> Undefined array key "nama_customer"
+#0 C:\xampp\htdocs\scm\app\Views\wh.php(233): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 233)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('wh', Array, true)
+#4 C:\xampp\htdocs\scm\app\Controllers\Warehouse.php(27): view('wh', Array)
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Warehouse->index()
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Warehouse))
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-27 00:27:11 --> Undefined array key "nama_customer"
+#0 C:\xampp\htdocs\scm\app\Views\wh.php(233): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 233)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('wh', Array, true)
+#4 C:\xampp\htdocs\scm\app\Controllers\Warehouse.php(27): view('wh', Array)
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Warehouse->index()
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Warehouse))
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-27 00:51:25 --> Undefined array key 0
+#0 C:\xampp\htdocs\scm\app\Controllers\Production.php(354): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 354)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Production->input1()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-27 00:56:39 --> Undefined array key 0
+#0 C:\xampp\htdocs\scm\app\Controllers\Production.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 460)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Production->input1()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-27 00:58:11 --> Undefined array key "idpart"
+#0 C:\xampp\htdocs\scm\app\Controllers\Production.php(213): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 213)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Production->input1()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-27 00:58:32 --> Undefined array key 0
+#0 C:\xampp\htdocs\scm\app\Controllers\Production.php(621): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 621)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Production->input2()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-27 01:04:32 --> Undefined array key 0
+#0 C:\xampp\htdocs\scm\app\Controllers\Production.php(792): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 792)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Production->input3()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-27 01:09:56 --> mysqli_fetch_all(): Argument #1 ($result) must be of type mysqli_result, bool given
+#0 C:\xampp\htdocs\scm\app\Views\buatpart.php(5): mysqli_fetch_all(false, 1)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('buatpart', Array, true)
+#4 C:\xampp\htdocs\scm\app\Controllers\Part.php(55): view('buatpart', Array)
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->buatpart('event.php')
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-27 01:09:56 --> mysqli_fetch_all(): Argument #1 ($result) must be of type mysqli_result, bool given
+#0 C:\xampp\htdocs\scm\app\Views\buatpart.php(5): mysqli_fetch_all(false, 1)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('buatpart', Array, true)
+#4 C:\xampp\htdocs\scm\app\Controllers\Part.php(55): view('buatpart', Array)
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->buatpart('tmpls', 'month.html')
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-27 01:10:55 --> mysqli_fetch_all(): Argument #1 ($result) must be of type mysqli_result, bool given
+#0 C:\xampp\htdocs\scm\app\Views\buatpart.php(5): mysqli_fetch_all(false, 1)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('buatpart', Array, true)
+#4 C:\xampp\htdocs\scm\app\Controllers\Part.php(55): view('buatpart', Array)
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->buatpart('event.php')
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-27 01:10:55 --> mysqli_fetch_all(): Argument #1 ($result) must be of type mysqli_result, bool given
+#0 C:\xampp\htdocs\scm\app\Views\buatpart.php(5): mysqli_fetch_all(false, 1)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('buatpart', Array, true)
+#4 C:\xampp\htdocs\scm\app\Controllers\Part.php(55): view('buatpart', Array)
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->buatpart('tmpls', 'month.html')
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-27 01:11:10 --> Undefined variable $pcs_lbr
+#0 C:\xampp\htdocs\scm\app\Controllers\Part.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 153)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->savepart()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-27 01:13:29 --> mysqli_fetch_all(): Argument #1 ($result) must be of type mysqli_result, bool given
+#0 C:\xampp\htdocs\scm\app\Views\buatpart.php(5): mysqli_fetch_all(false, 1)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('buatpart', Array, true)
+#4 C:\xampp\htdocs\scm\app\Controllers\Part.php(55): view('buatpart', Array)
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->buatpart('event.php')
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-27 01:13:29 --> mysqli_fetch_all(): Argument #1 ($result) must be of type mysqli_result, bool given
+#0 C:\xampp\htdocs\scm\app\Views\buatpart.php(5): mysqli_fetch_all(false, 1)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('buatpart', Array, true)
+#4 C:\xampp\htdocs\scm\app\Controllers\Part.php(55): view('buatpart', Array)
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->buatpart('tmpls', 'month.html')
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-27 01:13:58 --> Undefined variable $unit
+#0 C:\xampp\htdocs\scm\app\Controllers\Part.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 121)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->savepart()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-27 01:14:25 --> Undefined array key "kode_part"
+#0 C:\xampp\htdocs\scm\app\Controllers\Part.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->savepart()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-27 01:14:30 --> Undefined array key "kode_part"
+#0 C:\xampp\htdocs\scm\app\Controllers\Part.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->savepart()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-27 01:14:33 --> mysqli_fetch_all(): Argument #1 ($result) must be of type mysqli_result, bool given
+#0 C:\xampp\htdocs\scm\app\Views\buatpart.php(5): mysqli_fetch_all(false, 1)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('buatpart', Array, true)
+#4 C:\xampp\htdocs\scm\app\Controllers\Part.php(55): view('buatpart', Array)
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->buatpart('event.php')
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-27 01:14:33 --> mysqli_fetch_all(): Argument #1 ($result) must be of type mysqli_result, bool given
+#0 C:\xampp\htdocs\scm\app\Views\buatpart.php(5): mysqli_fetch_all(false, 1)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('buatpart', Array, true)
+#4 C:\xampp\htdocs\scm\app\Controllers\Part.php(55): view('buatpart', Array)
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->buatpart('tmpls', 'month.html')
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-27 01:15:27 --> Undefined array key "unit_material"
+#0 C:\xampp\htdocs\scm\app\Controllers\Purchasing.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 138)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Purchasing->saveposup()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchasing))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-27 01:16:54 --> Undefined variable $spek
+#0 C:\xampp\htdocs\scm\app\Controllers\Purchasing.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 154)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Purchasing->saveposup()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchasing))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-27 01:24:37 --> Undefined array key "total_qty"
+#0 C:\xampp\htdocs\scm\app\Controllers\Production.php(1476): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 1476)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Production->inputspot()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-27 01:32:47 --> syntax error, unexpected token "."
+#0 C:\xampp\htdocs\scm\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\scm\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\scm\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-01-27 14:34:10 --> Undefined array key "idpart"
+#0 C:\xampp\htdocs\scm\app\Controllers\Delivery.php(309): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 309)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Delivery->assyweld()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Delivery))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-27 14:35:40 --> Undefined array key 0
+#0 C:\xampp\htdocs\scm\app\Controllers\Delivery.php(315): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 315)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Delivery->assyweld()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Delivery))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -1,0 +1,83 @@
+CRITICAL - 2022-01-31 03:00:58 --> Undefined array key "username"
+#0 C:\xampp\htdocs\scm\app\Controllers\Home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 49)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Home->login()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-31 03:02:09 --> session_start(): Ignoring session_start() because a session is already active
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'session_start()...', 'C:\\xampp\\htdocs...', 2)
+#1 C:\xampp\htdocs\scm\app\Views\layout\tampil.php(2): session_start()
+#2 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\scm\system\View\View.php(230): CodeIgniter\View\View->render('layout/tampil', Array, true)
+#5 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('utama', Array, true)
+#6 C:\xampp\htdocs\scm\app\Controllers\Customer.php(27): view('utama', Array)
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Customer->page()
+#8 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#9 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-01-31 03:08:10 --> Undefined array key "status"
+#0 C:\xampp\htdocs\scm\app\Views\layout\tampil.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 3)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\View\View.php(230): CodeIgniter\View\View->render('layout/tampil', Array, true)
+#4 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('utama', Array, true)
+#5 C:\xampp\htdocs\scm\app\Controllers\Customer.php(27): view('utama', Array)
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Customer->page()
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#8 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-31 03:11:42 --> Unclosed '{' on line 49
+#0 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('indexlogin', Array, true)
+#2 C:\xampp\htdocs\scm\app\Controllers\Home.php(35): view('indexlogin', Array)
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Home->indexlogin()
+#4 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-01-31 03:12:41 --> syntax error, unexpected token "endif"
+#0 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('indexlogin', Array, true)
+#2 C:\xampp\htdocs\scm\app\Controllers\Home.php(35): view('indexlogin', Array)
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Home->indexlogin()
+#4 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-01-31 03:13:42 --> Undefined array key "username"
+#0 C:\xampp\htdocs\scm\app\Controllers\Home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 49)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Home->login()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-31 03:16:12 --> Undefined array key "status"
+#0 C:\xampp\htdocs\scm\app\Views\layout\tampil.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 7)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\View\View.php(230): CodeIgniter\View\View->render('layout/tampil', Array, true)
+#4 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('utama', Array, true)
+#5 C:\xampp\htdocs\scm\app\Controllers\Customer.php(27): view('utama', Array)
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Customer->page()
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#8 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-31 03:28:58 --> Undefined property: App\Controllers\Customer::$session
+#0 C:\xampp\htdocs\scm\app\Controllers\Customer.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 24)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Customer->page()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-31 03:29:19 --> Undefined property: App\Controllers\Customer::$session
+#0 C:\xampp\htdocs\scm\app\Controllers\Customer.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 24)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Customer->page()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

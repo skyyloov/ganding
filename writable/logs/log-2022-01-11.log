@@ -1,0 +1,14 @@
+CRITICAL - 2022-01-11 08:30:34 --> Array to string conversion
+#0 C:\xampp\htdocs\scm\app\Controllers\Warehouse.php(197): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 197)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Warehouse->shearing()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Warehouse))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-11 08:31:09 --> mysqli_num_rows(): Argument #1 ($result) must be of type mysqli_result, bool given
+#0 C:\xampp\htdocs\scm\app\Controllers\Warehouse.php(208): mysqli_num_rows(false)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Warehouse->shearing()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Warehouse))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

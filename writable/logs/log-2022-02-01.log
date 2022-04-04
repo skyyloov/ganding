@@ -1,0 +1,186 @@
+CRITICAL - 2022-02-01 01:46:02 --> mysqli_fetch_all(): Argument #1 ($result) must be of type mysqli_result, bool given
+#0 C:\xampp\htdocs\scm\app\Views\buatpart.php(5): mysqli_fetch_all(false, 1)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('buatpart', Array, true)
+#4 C:\xampp\htdocs\scm\app\Controllers\Part.php(55): view('buatpart', Array)
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->buatpart('event.php')
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 01:46:02 --> mysqli_fetch_all(): Argument #1 ($result) must be of type mysqli_result, bool given
+#0 C:\xampp\htdocs\scm\app\Views\buatpart.php(5): mysqli_fetch_all(false, 1)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('buatpart', Array, true)
+#4 C:\xampp\htdocs\scm\app\Controllers\Part.php(55): view('buatpart', Array)
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->buatpart('tmpls', 'month.html')
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 02:15:55 --> Too few arguments to function App\Controllers\Home::cetakmrp(), 1 passed in C:\xampp\htdocs\scm\system\CodeIgniter.php on line 824 and exactly 2 expected
+#0 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Home->cetakmrp('2&2022-02')
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-01 02:16:56 --> Too few arguments to function App\Controllers\Home::cetakmrp(), 1 passed in C:\xampp\htdocs\scm\system\CodeIgniter.php on line 824 and exactly 2 expected
+#0 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Home->cetakmrp('2&2022-02')
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-01 02:17:33 --> Too few arguments to function App\Controllers\Home::cetakmrp(), 1 passed in C:\xampp\htdocs\scm\system\CodeIgniter.php on line 824 and exactly 2 expected
+#0 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Home->cetakmrp('2&2022-02')
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-01 02:33:01 --> Undefined array key "tanggal"
+#0 C:\xampp\htdocs\scm\app\Controllers\Home.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 33)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Home->cetakmrp()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-01 06:07:59 --> syntax error, unexpected token "<"
+#0 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('cetakmrp', Array, true)
+#2 C:\xampp\htdocs\scm\app\Controllers\Home.php(42): view('cetakmrp', Array)
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Home->cetakmrp()
+#4 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-01 19:50:33 --> Class "PHPExcel_IOFactory" not found
+#0 C:\xampp\htdocs\scm\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('cetakmrp', Array, true)
+#3 C:\xampp\htdocs\scm\app\Controllers\Home.php(42): view('cetakmrp', Array)
+#4 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Home->cetakmrp()
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-01 19:50:35 --> Class "PHPExcel_IOFactory" not found
+#0 C:\xampp\htdocs\scm\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('cetakmrp', Array, true)
+#3 C:\xampp\htdocs\scm\app\Controllers\Home.php(42): view('cetakmrp', Array)
+#4 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Home->cetakmrp()
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-01 07:59:43 --> mysqli_fetch_all(): Argument #1 ($result) must be of type mysqli_result, bool given
+#0 C:\xampp\htdocs\scm\app\Views\buatpart.php(5): mysqli_fetch_all(false, 1)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('buatpart', Array, true)
+#4 C:\xampp\htdocs\scm\app\Controllers\Part.php(55): view('buatpart', Array)
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->buatpart('event.php')
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 07:59:43 --> mysqli_fetch_all(): Argument #1 ($result) must be of type mysqli_result, bool given
+#0 C:\xampp\htdocs\scm\app\Views\buatpart.php(5): mysqli_fetch_all(false, 1)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('buatpart', Array, true)
+#4 C:\xampp\htdocs\scm\app\Controllers\Part.php(55): view('buatpart', Array)
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->buatpart('tmpls', 'month.html')
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 08:03:40 --> mysqli_fetch_all(): Argument #1 ($result) must be of type mysqli_result, bool given
+#0 C:\xampp\htdocs\scm\app\Views\buatpart.php(5): mysqli_fetch_all(false, 1)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('buatpart', Array, true)
+#4 C:\xampp\htdocs\scm\app\Controllers\Part.php(55): view('buatpart', Array)
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->buatpart('event.php')
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 08:03:41 --> mysqli_fetch_all(): Argument #1 ($result) must be of type mysqli_result, bool given
+#0 C:\xampp\htdocs\scm\app\Views\buatpart.php(5): mysqli_fetch_all(false, 1)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('buatpart', Array, true)
+#4 C:\xampp\htdocs\scm\app\Controllers\Part.php(55): view('buatpart', Array)
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->buatpart('tmpls', 'month.html')
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 08:05:35 --> mysqli_fetch_all(): Argument #1 ($result) must be of type mysqli_result, bool given
+#0 C:\xampp\htdocs\scm\app\Views\buatpart.php(5): mysqli_fetch_all(false, 1)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('buatpart', Array, true)
+#4 C:\xampp\htdocs\scm\app\Controllers\Part.php(55): view('buatpart', Array)
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->buatpart('event.php')
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 08:05:36 --> mysqli_fetch_all(): Argument #1 ($result) must be of type mysqli_result, bool given
+#0 C:\xampp\htdocs\scm\app\Views\buatpart.php(5): mysqli_fetch_all(false, 1)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('buatpart', Array, true)
+#4 C:\xampp\htdocs\scm\app\Controllers\Part.php(55): view('buatpart', Array)
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->buatpart('tmpls', 'month.html')
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 08:06:07 --> mysqli_fetch_all(): Argument #1 ($result) must be of type mysqli_result, bool given
+#0 C:\xampp\htdocs\scm\app\Views\buatpart.php(5): mysqli_fetch_all(false, 1)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('buatpart', Array, true)
+#4 C:\xampp\htdocs\scm\app\Controllers\Part.php(55): view('buatpart', Array)
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->buatpart('event.php')
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 08:06:07 --> mysqli_fetch_all(): Argument #1 ($result) must be of type mysqli_result, bool given
+#0 C:\xampp\htdocs\scm\app\Views\buatpart.php(5): mysqli_fetch_all(false, 1)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('buatpart', Array, true)
+#4 C:\xampp\htdocs\scm\app\Controllers\Part.php(55): view('buatpart', Array)
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->buatpart('tmpls', 'month.html')
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 08:08:15 --> mysqli_fetch_all(): Argument #1 ($result) must be of type mysqli_result, bool given
+#0 C:\xampp\htdocs\scm\app\Views\buatpart.php(5): mysqli_fetch_all(false, 1)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('buatpart', Array, true)
+#4 C:\xampp\htdocs\scm\app\Controllers\Part.php(55): view('buatpart', Array)
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->buatpart('event.php')
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 08:08:15 --> mysqli_fetch_all(): Argument #1 ($result) must be of type mysqli_result, bool given
+#0 C:\xampp\htdocs\scm\app\Views\buatpart.php(5): mysqli_fetch_all(false, 1)
+#1 C:\xampp\htdocs\scm\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('buatpart', Array, true)
+#4 C:\xampp\htdocs\scm\app\Controllers\Part.php(55): view('buatpart', Array)
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Part->buatpart('tmpls', 'month.html')
+#6 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Part))
+#7 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

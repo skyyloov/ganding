@@ -1,0 +1,32 @@
+CRITICAL - 2022-01-05 00:34:12 --> Undefined array key "nama_part"
+#0 C:\xampp\htdocs\scm\app\Controllers\Purchasing.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 96)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Purchasing->saveposup()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchasing))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-05 00:35:17 --> Undefined array key "no_po_supplier"
+#0 C:\xampp\htdocs\scm\app\Controllers\Purchasing.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 122)
+#1 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Purchasing->saveposup()
+#2 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchasing))
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-05 08:50:19 --> syntax error, unexpected string content "", expecting "-" or identifier or variable or number
+#0 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('purchase', Array, true)
+#2 C:\xampp\htdocs\scm\app\Controllers\Purchasing.php(26): view('purchase', Array)
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Purchasing->index()
+#4 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchasing))
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-01-05 08:51:23 --> syntax error, unexpected token "echo"
+#0 C:\xampp\htdocs\scm\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\scm\system\Common.php(1097): CodeIgniter\View\View->render('purchase', Array, true)
+#2 C:\xampp\htdocs\scm\app\Controllers\Purchasing.php(26): view('purchase', Array)
+#3 C:\xampp\htdocs\scm\system\CodeIgniter.php(824): App\Controllers\Purchasing->index()
+#4 C:\xampp\htdocs\scm\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchasing))
+#5 C:\xampp\htdocs\scm\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\scm\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

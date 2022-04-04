@@ -1,0 +1,72 @@
+CRITICAL - 2022-02-24 01:11:51 --> Undefined variable $itung
+#0 /home/n1775814/public_html/app/Controllers/Production.php(126): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/n1775814/public_html/system/CodeIgniter.php(824): App\Controllers\Production->saveassy()
+#2 /home/n1775814/public_html/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#3 /home/n1775814/public_html/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/n1775814/public_html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-24 01:14:42 --> Unknown column 'idfg' in 'where clause'
+#0 /home/n1775814/public_html/app/Views/warehousefg.php(125): mysqli_query()
+#1 /home/n1775814/public_html/system/View/View.php(214): include('/home/n1775814/...')
+#2 /home/n1775814/public_html/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/n1775814/public_html/system/Common.php(1097): CodeIgniter\View\View->render()
+#4 /home/n1775814/public_html/app/Controllers/Warehousefg.php(29): view()
+#5 /home/n1775814/public_html/system/CodeIgniter.php(824): App\Controllers\Warehousefg->index()
+#6 /home/n1775814/public_html/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#7 /home/n1775814/public_html/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/n1775814/public_html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-24 01:30:05 --> Undefined variable $finisubcont
+#0 /home/n1775814/public_html/app/Views/warehousefg.php(179): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/n1775814/public_html/system/View/View.php(214): include('/home/n1775814/...')
+#2 /home/n1775814/public_html/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/n1775814/public_html/system/Common.php(1097): CodeIgniter\View\View->render()
+#4 /home/n1775814/public_html/app/Controllers/Warehousefg.php(29): view()
+#5 /home/n1775814/public_html/system/CodeIgniter.php(824): App\Controllers\Warehousefg->index()
+#6 /home/n1775814/public_html/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#7 /home/n1775814/public_html/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/n1775814/public_html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-24 09:37:23 --> Undefined array key "username"
+#0 /home/n1775814/public_html/app/Controllers/Home.php(90): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/n1775814/public_html/system/CodeIgniter.php(824): App\Controllers\Home->login()
+#2 /home/n1775814/public_html/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#3 /home/n1775814/public_html/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/n1775814/public_html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-24 10:27:02 --> Undefined array key 0
+#0 /home/n1775814/public_html/app/Controllers/Warehousefg.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/n1775814/public_html/system/CodeIgniter.php(824): App\Controllers\Warehousefg->delivsubcont()
+#2 /home/n1775814/public_html/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#3 /home/n1775814/public_html/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/n1775814/public_html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-24 10:28:40 --> Undefined array key 0
+#0 /home/n1775814/public_html/app/Controllers/Warehousefg.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/n1775814/public_html/system/CodeIgniter.php(824): App\Controllers\Warehousefg->delivsubcont()
+#2 /home/n1775814/public_html/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#3 /home/n1775814/public_html/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/n1775814/public_html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-24 10:52:26 --> Undefined array key "nosurjal"
+#0 /home/n1775814/public_html/app/Views/warehousefg.php(297): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/n1775814/public_html/system/View/View.php(214): include('/home/n1775814/...')
+#2 /home/n1775814/public_html/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/n1775814/public_html/system/Common.php(1097): CodeIgniter\View\View->render()
+#4 /home/n1775814/public_html/app/Controllers/Warehousefg.php(36): view()
+#5 /home/n1775814/public_html/system/CodeIgniter.php(824): App\Controllers\Warehousefg->index()
+#6 /home/n1775814/public_html/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#7 /home/n1775814/public_html/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/n1775814/public_html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-24 11:08:54 --> Undefined array key "keterangan"
+#0 /home/n1775814/public_html/app/Views/delivery.php(185): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/n1775814/public_html/system/View/View.php(214): include('/home/n1775814/...')
+#2 /home/n1775814/public_html/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/n1775814/public_html/system/Common.php(1097): CodeIgniter\View\View->render()
+#4 /home/n1775814/public_html/app/Controllers/Delivery.php(40): view()
+#5 /home/n1775814/public_html/system/CodeIgniter.php(824): App\Controllers\Delivery->index()
+#6 /home/n1775814/public_html/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#7 /home/n1775814/public_html/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/n1775814/public_html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
