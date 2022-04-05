@@ -1,5 +1,5 @@
 <?php $id = $_GET["id"]; ?>
-<?php   $koneksi =mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php   $koneksi =mysqli_connect('localhost','root','','ganding');
                         $query =  mysqli_query($koneksi, "select * from part where id = $id ");
                         $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC); ?>
                         <?php $hitung = mysqli_num_rows($query); ?>
@@ -10,7 +10,7 @@
             <h4 class="modal-title" id="myModalLabel" >Input Data Kedatangan Subcont <?= $hasil[0]['nama_part']; ?></h4>
         </div>
         <div class="modal-body">
-        <form method="POST" action="https://scmganding.site/public/warehousefg/kedatangan" enctype="multipart/form-data" class="">
+        <form method="POST" action="http://localhost:8080/gands/public/warehousefg/kedatangan" enctype="multipart/form-data" class="">
                <div class="form-row">
 
                <div class="form-group col">
@@ -72,9 +72,9 @@ $(document).ready(function(){
                 $(".checkbox").change(function() {
                     var data = 1;
                      if(this.checked) {
-                        $('.notgood').load('https://scmganding.site/public/cekbox.php?idcek=' + data);
+                        $('.notgood').load('http://localhost:8080/gands/public/cekbox.php?idcek=' + data);
                     } else {
-                        $('.notgood').load('https://scmganding.site/public/cekbox.php?idcek2=' + data);
+                        $('.notgood').load('http://localhost:8080/gands/public/cekbox.php?idcek2=' + data);
                     }
                 });
             });

@@ -77,8 +77,7 @@ class Warehouse extends BaseController
                 $qty2 = (int) $posup[0]['qty_dtg2'];
                 $qtyac = (int) $posup[0]['qty_act'];
                 $no_po_supplier = $posup[0]['no_po_supplier'];
-                $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
-                               $query =  mysqli_query($koneksi, "select * from warehouse where kodepart = '$code' and id_customer = '$idcust' and unit = '$unit' ");
+                               $query =  mysqli_query($this->koneksi, "select * from warehouse where kodepart = '$code' and id_customer = '$idcust' and unit = '$unit' ");
                                $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC); 
                                foreach ($hasil as $a) {
                                 $idwh = $a['id'];
@@ -117,7 +116,7 @@ class Warehouse extends BaseController
                   ]); 
                 }
 
-                $queryyy =  mysqli_query($koneksi, "select * from rencana where description = 'kedatangan pertama' and qty1 = '$code' and qty2 = '$no_po_supplier' ");
+                $queryyy =  mysqli_query($this->koneksi, "select * from rencana where description = 'kedatangan pertama' and qty1 = '$code' and qty2 = '$no_po_supplier' ");
                 $hitooeng = mysqli_num_rows($queryyy);
                 if ($hitooeng > 0 ) {
                     $has = mysqli_fetch_all($queryyy, MYSQLI_ASSOC); 
@@ -127,7 +126,7 @@ class Warehouse extends BaseController
                     $this->rencanaModel->delete($idrc);
 
                 }
-                 $querykedats2 =  mysqli_query($koneksi, "select * from rencana where description = 'kedatangan kedua' and qty1 = '$code' and qty2 = '$no_po_supplier' ");
+                 $querykedats2 =  mysqli_query($this->koneksi, "select * from rencana where description = 'kedatangan kedua' and qty1 = '$code' and qty2 = '$no_po_supplier' ");
                 $hitungkedats2 = mysqli_num_rows($querykedats2);
                 if($hitungkedats2 > 0 ){
                 $hasilkedats2 = mysqli_fetch_all($querykedats2, MYSQLI_ASSOC);
@@ -151,8 +150,7 @@ class Warehouse extends BaseController
                 $qty2b = (int) $posup[0]['qty_dtg2'];
                 $qtyacb = (int) $posup[0]['qty_act'];
                 $no_po_supplier = $posup[0]['no_po_supplier'];
-                $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
-                               $queryy =  mysqli_query($koneksi, "select * from warehouse where kodepart = '$code' and id_customer = '$idcust' and unit = '$unit' ");
+                               $queryy =  mysqli_query($this->koneksi, "select * from warehouse where kodepart = '$code' and id_customer = '$idcust' and unit = '$unit' ");
                                $hasils = mysqli_fetch_all($queryy, MYSQLI_ASSOC); 
                                foreach ($hasils as $a) {
                                 $idwh = $a['id'];
@@ -191,7 +189,7 @@ class Warehouse extends BaseController
                   ]); 
                 }
                 
-                $queryyy =  mysqli_query($koneksi, "select * from rencana where description = 'kedatangan kedua' and qty1 = '$code' and qty2 = '$no_po_supplier' ");
+                $queryyy =  mysqli_query($this->koneksi, "select * from rencana where description = 'kedatangan kedua' and qty1 = '$code' and qty2 = '$no_po_supplier' ");
                 $hitto = mysqli_num_rows($queryyy);
 
                 if ($hitto > 0) {
@@ -225,8 +223,7 @@ if ($shear['kodepart']=== "" ) {
         $code = $shear['kodepart'];
         $qtty = $qtyall - $qtysher;
 
-        $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
-        $query =  mysqli_query($koneksi, "select * from part where kode_part = '$code' ");
+        $query =  mysqli_query($this->koneksi, "select * from part where kode_part = '$code' ");
         $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC);
         foreach ($hasil as $a) {
             $pcsheet = $a['pcs_sheet'];
@@ -238,7 +235,7 @@ if ($shear['kodepart']=== "" ) {
         } 
 //cek apakah di warehouse ada material sheet
 
-        $que = mysqli_query($koneksi, "select * from warehouse where kodepart = '$code' and unit = 'sheet' ");
+        $que = mysqli_query($this->koneksi, "select * from warehouse where kodepart = '$code' and unit = 'sheet' ");
         $hitung = mysqli_num_rows($que);
 
         if ($hitung > 0 ) {
@@ -261,7 +258,7 @@ if ($shear['kodepart']=== "" ) {
 
         }else {
             $qtybar = $qtysher * $shtlembar;
-            $quer =  mysqli_query($koneksi, "select * from warehouse where id = '$idwh' ");
+            $quer =  mysqli_query($this->koneksi, "select * from warehouse where id = '$idwh' ");
             $ha = mysqli_fetch_all($quer, MYSQLI_ASSOC);
             foreach ($ha as $c) {
                 $namacust = $c['nama_customer'];
@@ -318,8 +315,7 @@ if ($shear['kodepart']=== "" ) {
         $spek = $cz['spec'];
         $code = $cz['kodepart'];
 
-        $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
-        $query =  mysqli_query($koneksi, "select * from part where kode_part = '$code' ");
+        $query =  mysqli_query($this->koneksi, "select * from part where kode_part = '$code' ");
         $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC);
         foreach ($hasil as $a) {
             $pcsheet = $a['pcs_sheet'];
@@ -331,7 +327,7 @@ if ($shear['kodepart']=== "" ) {
         } 
 //cek apakah di warehouse ada material sheet
 
-$que = mysqli_query($koneksi, "select * from warehouse where kodepart = '$code' and unit = 'sheet' ");
+$que = mysqli_query($this->koneksi, "select * from warehouse where kodepart = '$code' and unit = 'sheet' ");
 $hitung = mysqli_num_rows($que);
 
     if ($hitung > 0) {
@@ -354,7 +350,7 @@ $qtyniw = $toqty + $qtysher;
 
     }else {
         $qtybar = ROUND($qtyall - $qtysher / $shtlembar,2);
-            $quer =  mysqli_query($koneksi, "select * from warehouse where id = '$idwh' ");
+            $quer =  mysqli_query($this->koneksi, "select * from warehouse where id = '$idwh' ");
             $ha = mysqli_fetch_all($quer, MYSQLI_ASSOC);
             foreach ($ha as $c) {
                 $namacust = $c['nama_customer'];

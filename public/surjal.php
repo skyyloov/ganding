@@ -7,7 +7,7 @@
 </div>
 <?php } else {?>
 
-<?php  $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php  $koneksi = mysqli_connect('localhost','root','','ganding');
                         $query =  mysqli_query($koneksi, "select * from surjal where nomor_surjal = '$idsurjal' ");
                         $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC);
                         $hitung = mysqli_num_rows($query);
@@ -23,7 +23,7 @@
                         } ?>
 
     <div class="col">
-        <form action="https://scmganding.site/public/home/cetakrekapsup/" method="GET">
+        <form action="http://localhost:8080/gands/public/home/cetakrekapsup/" method="GET">
         <input type="hidden" name="idsurjal" value="<?= $idsurjal; ?>">
         <input type="hidden" name="idsup" value="<?= $idsup; ?>">
             <button type="submit" style="float:right;" class="btn btn-sm btn-info">Cetak Rekap</button>

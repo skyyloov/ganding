@@ -1,6 +1,6 @@
 <?php if(isset($_GET["idproses1"])){ ?>
 <?php $id = $_GET["idproses1"]; ?>
-<?php   $koneksi =mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php   $koneksi =mysqli_connect('localhost','root','','ganding');
                         $query =  mysqli_query($koneksi, "select * from part where id = $id ");
                         $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC); ?>
                         <?php $hitung = mysqli_num_rows($query); ?>
@@ -11,7 +11,7 @@
             <h4 class="modal-title" id="myModalLabel" >Input Data Proses1 Part <?= $hasil[0]['nama_part']; ?></h4>
         </div>
         <div class="modal-body">
-        <form method="POST" action="https://scmganding.site/public/production/input1" enctype="multipart/form-data" class="">
+        <form method="POST" action="http://localhost:8080/gands/public/production/input1" enctype="multipart/form-data" class="">
                <div class="form-row">
 
                <div class="form-group col">
@@ -51,7 +51,7 @@
 
 <?php }elseif(isset($_GET["idproses2"])){ ?>
     <?php $id = $_GET["idproses2"]; ?>
-<?php   $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php   $koneksi = mysqli_connect('localhost','root','','ganding');
                         $query =  mysqli_query($koneksi, "select * from part where id = $id ");
                         $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC); ?>
                         <?php $hitung = mysqli_num_rows($query); ?>
@@ -62,7 +62,7 @@
             <h4 class="modal-title" id="myModalLabel" >Input Data Proses2 Part <?= $hasil[0]['nama_part']; ?></h4>
         </div>
         <div class="modal-body">
-        <form method="post" action="https://scmganding.site/public/production/input2" class="">
+        <form method="post" action="http://localhost:8080/gands/public/production/input2" class="">
                <div class="form-row">
 
                <div class="form-group col">
@@ -100,7 +100,7 @@
 
  <?php }elseif(isset($_GET["idproses3"])){ ?>
     <?php $id = $_GET["idproses3"]; ?>
-<?php   $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php   $koneksi = mysqli_connect('localhost','root','','ganding');
                         $query =  mysqli_query($koneksi, "select * from part where id = $id ");
                         $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC); ?>
                         <?php $hitung = mysqli_num_rows($query); ?>
@@ -111,7 +111,7 @@
             <h4 class="modal-title" id="myModalLabel" >Input Data Proses3 Part <?= $hasil[0]['nama_part']; ?></h4>
         </div>
         <div class="modal-body">
-        <form method="post" action="https://scmganding.site/public/production/input3" class="">
+        <form method="post" action="http://localhost:8080/gands/public/production/input3" class="">
                <div class="form-row">
 
                <div class="form-group col">
@@ -149,7 +149,7 @@
 </div>
  <?php }elseif(isset($_GET["idproses4"])){ ?> 
     <?php $id = $_GET["idproses4"]; ?>
-<?php   $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php   $koneksi = mysqli_connect('localhost','root','','ganding');
                         $query =  mysqli_query($koneksi, "select * from part where id = $id ");
                         $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC); ?>
                         <?php $hitung = mysqli_num_rows($query); ?>
@@ -160,7 +160,7 @@
             <h4 class="modal-title" id="myModalLabel" >Input Data Proses4 Part <?= $hasil[0]['nama_part']; ?></h4>
         </div>
         <div class="modal-body">
-        <form method="post" action="https://scmganding.site/public/production/input4" class="">
+        <form method="post" action="http://localhost:8080/gands/public/production/input4" class="">
                <div class="form-row">
 
                <div class="form-group col">
@@ -198,7 +198,7 @@
 </div>
   <?php }elseif(isset($_GET["idproses5"])){ ?>
     <?php $id = $_GET["idproses5"]; ?>
-<?php   $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php   $koneksi = mysqli_connect('localhost','root','','ganding');
                         $query =  mysqli_query($koneksi, "select * from part where id = $id ");
                         $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC); ?>
                         <?php $hitung = mysqli_num_rows($query); ?>
@@ -209,7 +209,7 @@
             <h4 class="modal-title" id="myModalLabel" >Input Data Proses5 Part <?= $hasil[0]['nama_part']; ?></h4>
         </div>
         <div class="modal-body">
-        <form method="post" action="https://scmganding.site/public/production/input5" class="">
+        <form method="post" action="http://localhost:8080/gands/public/production/input5" class="">
                <div class="form-row">
 
                <div class="form-group col">
@@ -247,7 +247,7 @@
 </div>
 <?php }elseif(isset($_GET["idproses6"])){ ?>
     <?php $id = $_GET["idproses6"]; ?>
-<?php   $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php   $koneksi = mysqli_connect('localhost','root','','ganding');
                         $query =  mysqli_query($koneksi, "select * from part where id = $id ");
                         $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC); ?>
                         <?php $hitung = mysqli_num_rows($query); ?>
@@ -258,7 +258,7 @@
             <h4 class="modal-title" id="myModalLabel" >Input Data Proses6 Part <?= $hasil[0]['nama_part']; ?></h4>
         </div>
         <div class="modal-body">
-        <form method="post" action="https://scmganding.site/public/production/input6" class="">
+        <form method="post" action="http://localhost:8080/gands/public/production/input6" class="">
                <div class="form-row">
 
                <div class="form-group col">
@@ -296,7 +296,7 @@
 </div>
   <?php }elseif(isset($_GET["idproses7"])){ ?>
     <?php $id = $_GET["idproses7"]; ?>
-<?php   $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php   $koneksi = mysqli_connect('localhost','root','','ganding');
                         $query =  mysqli_query($koneksi, "select * from part where id = $id ");
                         $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC); ?>
                         <?php $hitung = mysqli_num_rows($query); ?>
@@ -307,7 +307,7 @@
             <h4 class="modal-title" id="myModalLabel" >Input Data Proses7 Part <?= $hasil[0]['nama_part']; ?></h4>
         </div>
         <div class="modal-body">
-        <form method="post" action="https://scmganding.site/public/production/input7" class="">
+        <form method="post" action="http://localhost:8080/gands/public/production/input7" class="">
                <div class="form-row">
 
                <div class="form-group col">
@@ -345,7 +345,7 @@
 </div>
   <?php }elseif (isset($_GET["idprosesspot"])) {?>
     <?php $id = $_GET["idprosesspot"]; ?>
-<?php   $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php   $koneksi = mysqli_connect('localhost','root','','ganding');
                         $query =  mysqli_query($koneksi, "select * from part where id = $id ");
                         $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC); ?>
                         <?php $hitung = mysqli_num_rows($query); ?>
@@ -356,7 +356,7 @@
             <h4 class="modal-title" id="myModalLabel" >Input Data Proses SPOT Part <?= $hasil[0]['nama_part']; ?></h4>
         </div>
         <div class="modal-body">
-        <form method="post" action="https://scmganding.site/public/production/inputspot" class="">
+        <form method="post" action="http://localhost:8080/gands/public/production/inputspot" class="">
                <div class="form-row">
 
                <div class="form-group col-md-4">
@@ -411,7 +411,7 @@
 </div>
     <?php }elseif(isset($_GET['idprosesspot2'])){ ?>
     <?php $id = $_GET["idprosesspot2"]; ?>
-<?php   $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php   $koneksi = mysqli_connect('localhost','root','','ganding');
                         $query =  mysqli_query($koneksi, "select * from part where id = $id ");
                         $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC); ?>
                         <?php $hitung = mysqli_num_rows($query); ?>
@@ -422,7 +422,7 @@
             <h4 class="modal-title" id="myModalLabel" >Input Data Proses SPOT 2 Part <?= $hasil[0]['nama_part']; ?></h4>
         </div>
         <div class="modal-body">
-        <form method="post" action="https://scmganding.site/public/production/inputspot2" class="">
+        <form method="post" action="http://localhost:8080/gands/public/production/inputspot2" class="">
                <div class="form-row">
 
                <div class="form-group col-md-4">
@@ -499,9 +499,9 @@ $(document).ready(function(){
                 $(".checkbox").change(function() {
                     var data = 1;
                      if(this.checked) {
-                        $('.notgood').load('https://scmganding.site/public/cekbox.php?idcek=' + data);
+                        $('.notgood').load('http://localhost:8080/gands/public/cekbox.php?idcek=' + data);
                     } else {
-                        $('.notgood').load('https://scmganding.site/public/cekbox.php?idcek2=' + data);
+                        $('.notgood').load('http://localhost:8080/gands/public/cekbox.php?idcek2=' + data);
                     }
                 });
             });

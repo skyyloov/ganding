@@ -1,6 +1,6 @@
 <?php $idedit = $_GET['idedit'];
     $idpart = $_GET['idpart']; 
-    $koneksi =mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+    $koneksi =mysqli_connect('localhost','root','','ganding');
     $queryspot =  mysqli_query($koneksi, "select * from part where id = $idpart ");
     $partspot = mysqli_fetch_all($queryspot, MYSQLI_ASSOC);
     

@@ -6,7 +6,7 @@
   <?= "Tidak Ada Data"; ?>
 </div>
     <?php }else{ ?>
-      <?php $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+      <?php $koneksi = mysqli_connect('localhost','root','','ganding');
                         $querysurjal =  mysqli_query($koneksi, "select * from surjalsubcont where nomorsurjal = '$iddelivery' ");
                         $hasilsurjal = mysqli_fetch_all($querysurjal, MYSQLI_ASSOC);
                         $idsup = $hasilsurjal[0]['id_supplier']; ?>
@@ -71,7 +71,7 @@
   <?= "Tidak Ada Data"; ?>
 </div>
     <?php }else{ ?>
-      <?php $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+      <?php $koneksi = mysqli_connect('localhost','root','','ganding');
                         $querysurjal =  mysqli_query($koneksi, "select * from surjaldatangsubcont where nomorsurjal = '$iddelivery' ");
                         $hasilsurjal = mysqli_fetch_all($querysurjal, MYSQLI_ASSOC);
                         $idsup = $hasilsurjal[0]['idsup']; ?>

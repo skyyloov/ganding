@@ -1,4 +1,4 @@
-  <?php $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding'); ?>
+  <?php $koneksi = mysqli_connect('localhost','root','','ganding'); ?>
 
 <?php if (isset($_GET["idsupplier"])) { ?>
                  
@@ -105,7 +105,7 @@ $(document).ready(function(){
     //Added with the EDIT
     var data = $option.val();//to get content of "value" attrib
     console.log(data)
-    $('.sus').load('https://scmganding.site/public/matrs.php?no_po_supplier=' + data);  
+    $('.sus').load('http://localhost:8080/gands/public/matrs.php?no_po_supplier=' + data);  
 });
 });
 </script>   
@@ -118,7 +118,7 @@ $(document).ready(function(){
     //Added with the EDIT
     var data = $option.val();//to get content of "value" attrib
     console.log(data)
-    $('.confrm').load('https://scmganding.site/public/confrm.php?idd=' + data);  
+    $('.confrm').load('http://localhost:8080/gands/public/confrm.php?idd=' + data);  
 });
 });
 </script>   
@@ -133,7 +133,7 @@ $(document).ready(function(){
     //Added with the EDIT
     var datasurjal = $option.val();//to get content of "value" attrib
     console.log(datasurjal)
-    $('.deliv').load('https://scmganding.site/public/surjalcust.php?nosurjal=' + datasurjal);  
+    $('.deliv').load('http://localhost:8080/gands/public/surjalcust.php?nosurjal=' + datasurjal);  
 });
 });
 </script>  

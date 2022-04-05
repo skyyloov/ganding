@@ -1,6 +1,6 @@
 <?php $tgl = (int) $_GET["id"]; ?>
 <?php $idpo = $_GET["date"]; ?>
-<?php  $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php  $koneksi = mysqli_connect('localhost','root','','ganding');
                       $query =  mysqli_query($koneksi, "select * from po where id = $idpo ");
                       $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC);
                       $qty = (int) $hasil[0]['qty_pcs']; ?>

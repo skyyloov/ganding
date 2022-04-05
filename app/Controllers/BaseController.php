@@ -28,6 +28,7 @@ class BaseController extends Controller
      */
     protected $request;
 
+    protected $koneksi;
     /**
      * An array of helpers to be loaded automatically upon
      * class instantiation. These helpers will be available
@@ -49,5 +50,6 @@ class BaseController extends Controller
 
         // E.g.: $this->session = \Config\Services::session();
         session();
+        $this->koneksi = mysqli_connect('localhost','root','','ganding');
     }
 }

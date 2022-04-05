@@ -16,7 +16,7 @@
                         <select class="form-control" name="nama_customer" id="mrp" required>
                         <option value="0">-Pilih Customer</option>
                         <?php
-                      $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+                      $koneksi = mysqli_connect('localhost','root','','ganding');
                         $querycust =  mysqli_query($koneksi, "select * from customer");
                         $hasilcust = mysqli_fetch_all($querycust, MYSQLI_ASSOC);
                         foreach ($hasilcust as $item){ ?>
@@ -113,27 +113,6 @@ $(document).ready(function(){
     var tanggal = $('#tgl').val();
     let table = $('#tabl').DataTable();
     
-//     $('#mrp').change(function() {
-//     //Use $option (with the "$") to see that the variable is a jQuery object
-//     var $option = $(this).find('option:selected');
-//     //Added with the EDIT
-//     var data = $option.val();//to get content of "value" attrib
-//     console.log(data)
-//     if (data === 0 ) {
-        
-//       }
-      
-//       else{
-//     $('.mrp').load('/scm/public/mrpp.php?id=' + data);  
-
-//       }
-
-// });
-// $('#tgl').change(function() {
-//    var tanggal = $('#tgl').val();
-//    $('.mrp').load('/scm/public/mrpp.php?tgl=' + tanggal); 
-// });
-
 $('#hayolah').change(function() {
     var tanggal = $('#tgl').val();
     var data = $(this).find('option:selected').val();

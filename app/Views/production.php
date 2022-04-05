@@ -47,7 +47,7 @@
                                                                  <select class="form-control" name="nama_customer" id="part" required>
                                                                      <option value="0">~Pilih Part~</option>
                                                                      <?php
-                     $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+                     $koneksi = mysqli_connect('localhost','root','','ganding');
                       $query =  mysqli_query($koneksi, "select * from part");
                       $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC);
                       foreach ($hasil as $item){ ?>
@@ -112,7 +112,7 @@
             <?php foreach($proses1 as $a): ?>
             <?php 
                 $idpart1 = $a['id_part'];
-            $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+            $koneksi = mysqli_connect('localhost','root','','ganding');
                       $querypart1 =  mysqli_query($koneksi, "select * from part where id = $idpart1 ");
                       $hasilpart1 = mysqli_fetch_all($querypart1, MYSQLI_ASSOC); ?>
     <tr>  
@@ -146,7 +146,7 @@
             <?php $i=1; ?>
             <?php foreach($proses2 as $a): ?>
             <?php  $idpart2 = $a['id_part'];
-            $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+            $koneksi = mysqli_connect('localhost','root','','ganding');
                       $querypart2 =  mysqli_query($koneksi, "select * from part where id = $idpart2 ");
                       $hasilpart2 = mysqli_fetch_all($querypart2, MYSQLI_ASSOC);  ?>
     <tr>  
@@ -180,7 +180,7 @@
             <?php $i=1; ?>
             <?php foreach($proses3 as $a): ?>
              <?php  $idpart3 = $a['id_part'];
-            $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+            $koneksi = mysqli_connect('localhost','root','','ganding');
                       $querypart3 =  mysqli_query($koneksi, "select * from part where id = $idpart3 ");
                       $hasilpart3 = mysqli_fetch_all($querypart3, MYSQLI_ASSOC);  ?>
     <tr>  
@@ -214,7 +214,7 @@
             <?php $i=1; ?>
             <?php foreach($proses4 as $a): ?>
              <?php  $idpart4 = $a['id_part'];
-            $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+            $koneksi = mysqli_connect('localhost','root','','ganding');
                       $querypart4 =  mysqli_query($koneksi, "select * from part where id = $idpart4 ");
                       $hasilpart4 = mysqli_fetch_all($querypart4, MYSQLI_ASSOC);  ?>
     <tr>  
@@ -248,7 +248,7 @@
             <?php $i=1; ?>
             <?php foreach($proses5 as $a): ?>
              <?php  $idpart5 = $a['id_part'];
-            $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+            $koneksi = mysqli_connect('localhost','root','','ganding');
                       $querypart5 =  mysqli_query($koneksi, "select * from part where id = $idpart5 ");
                       $hasilpart5 = mysqli_fetch_all($querypart5, MYSQLI_ASSOC);  ?>
     <tr>  
@@ -282,7 +282,7 @@
             <?php $i=1; ?>
             <?php foreach($proses6 as $a): ?>
              <?php  $idpart6 = $a['id_part'];
-            $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+            $koneksi = mysqli_connect('localhost','root','','ganding');
                       $querypart6 =  mysqli_query($koneksi, "select * from part where id = $idpart6 ");
                       $hasilpart6 = mysqli_fetch_all($querypart6, MYSQLI_ASSOC);  ?>
     <tr>  
@@ -316,7 +316,7 @@
             <?php $i=1; ?>
             <?php foreach($proses7 as $a): ?>
              <?php  $idpart7 = $a['id_part'];
-            $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+            $koneksi = mysqli_connect('localhost','root','','ganding');
                       $querypart7 =  mysqli_query($koneksi, "select * from part where id = $idpart7 ");
                       $hasilpart7 = mysqli_fetch_all($querypart7, MYSQLI_ASSOC);  ?>
     <tr>  
@@ -439,7 +439,7 @@
                         <select class="form-control" name="nama_customer" id="welding" required>
                         <option value="0">-Pilih Produk</option>
                         <?php
-                     $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+                     $koneksi = mysqli_connect('localhost','root','','ganding');
                       $query =  mysqli_query($koneksi, "select * from welding");
                       $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC);
                       foreach ($hasil as $item){ ?>
@@ -469,7 +469,7 @@
                         <select class="form-control" name="idfg" id="welding" required>
                         <option value="">-Pilih Produk</option>
                         <?php
-                     $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+                     $koneksi = mysqli_connect('localhost','root','','ganding');
                       $query =  mysqli_query($koneksi, "select * from welding");
                       $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC);
                       foreach ($hasil as $item){ ?>
@@ -517,7 +517,7 @@
                                                                  <select class="form-control" name="nama_customer" id="customer" required>
                                                                      <option value="0">~Pilih Customer~</option>
                                                                      <?php
-                     $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+                     $koneksi = mysqli_connect('localhost','root','','ganding');
                       $query =  mysqli_query($koneksi, "select * from customer");
                       $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC);
                       foreach ($hasil as $item){ ?>
@@ -542,7 +542,7 @@
                                                 <div class="tab-pane fade" id="nav-schedule" role="tabpanel" aria-labelledby="nav-schedule-tab">
 <div class="contaier">
 <div class="row">
-<?php $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php $koneksi = mysqli_connect('localhost','root','','ganding');
                       $queryproduksi =  mysqli_query($koneksi, "select * from po where status = 'belum close' ");
                       $hasilproduksi = mysqli_fetch_all($queryproduksi, MYSQLI_ASSOC);
                       $hitungproduksi = mysqli_num_rows($queryproduksi); ?>
@@ -700,7 +700,7 @@ $querywhfg =  mysqli_query($koneksi, "select * from warehousefg where id_part = 
                     <?php if($prsz == 'proses8'){
                         $prsz = 'spot';
                     } ?>
-                <?php  $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+                <?php  $koneksi = mysqli_connect('localhost','root','','ganding');
                       $queryjadwal =  mysqli_query($koneksi, "select * from $prsz where id_part = $idpartjadwal ");
                       $hasiljadwal = mysqli_fetch_all($queryjadwal, MYSQLI_ASSOC); ?>
     <tr>  

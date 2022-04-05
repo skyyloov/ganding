@@ -1,6 +1,6 @@
 <?= $this->extend('layout/tampil'); ?>
 <?= $this->Section('contet'); ?>
-<?php $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding'); ?>
+<?php $koneksi = mysqli_connect('localhost','root','','ganding'); ?>
 <div class="container mt-5">
     <?php if(session()->getFlashdata('pesan')): ?>
   <div class="alert alert-info" role="alert">

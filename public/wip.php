@@ -1,11 +1,11 @@
 <?php $id = $_GET['id']; ?>
 
-<?php   $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php   $koneksi = mysqli_connect('localhost','root','','ganding');
                       $query =  mysqli_query($koneksi, "select * from part where id_customer = $id ");
                       $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC); ?>
 
 <div class="col-md-2">
- <a href="https://scmganding.site/public/cetakwip/<?= $id; ?>" class="btn btn-xs btn-info mb-3" target="blank">Cetak Stok WIP</a>
+ <a href="http://localhost:8080/gands/public/cetakwip/<?= $id; ?>" class="btn btn-xs btn-info mb-3" target="blank">Cetak Stok WIP</a>
 </div>
 
   <?php $noemoer=1; ?>
@@ -75,7 +75,7 @@
 
           <td style="text-align:center;"><?= $hasilspot[0]['qty_in']; ?></td>
         <?php } ?>
-<?php $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php $koneksi = mysqli_connect('localhost','root','','ganding');
                       $querywhfg =  mysqli_query($koneksi, "select * from warehousefg where id_part = $idpart ");
                       $hasilwhfg = mysqli_fetch_all($querywhfg, MYSQLI_ASSOC);
                       $hitungwhfg = mysqli_num_rows($querywhfg); ?>

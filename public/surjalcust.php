@@ -14,7 +14,7 @@
   <?= "Tidak Ada Data"; ?>
 </div>
     <?php }else{ ?>
-      <?php $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+      <?php $koneksi = mysqli_connect('localhost','root','','ganding');
                         $querysurjal =  mysqli_query($koneksi, "select * from surjalcust where nosurjal = '$nosurjal' ");
                         $hasilsurjal = mysqli_fetch_all($querysurjal, MYSQLI_ASSOC);
                         $idcust = $hasilsurjal[0]['id_customer']; ?>
@@ -28,7 +28,7 @@
                           $namacustomer = "No Data Customer";
                         } ?>
 
-<a href="https://scmganding.site/public/home/cetakrekapcust/<?= $nosurjal; ?>" style="float:right;" target="blank" class="btn btn-sm btn-warning">Cetak Rekap</a>
+<a href="http://localhost:8080/gands/public/home/cetakrekapcust/<?= $nosurjal; ?>" style="float:right;" target="blank" class="btn btn-sm btn-warning">Cetak Rekap</a>
   <div class="d-flex bd-highlight">
   <div class="p-2 flex-grow-1 bd-highlight"><span style="text-align:center; font-size:17px;"><?= $namacustomer; ?></span></div>
   <div class="p-2 bd-highlight">Insterted At</div>
