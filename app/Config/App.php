@@ -23,7 +23,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'https://scmganding.site/';
+    public $baseURL = 'http://localhost:8080/gands/public/';
 
     /**
      * --------------------------------------------------------------------------

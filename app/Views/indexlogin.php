@@ -58,7 +58,7 @@
   <?= session()->getFlashdata('pesangagal'); ?>
 </div>
 <?php } ?>
-                     <form action="/home/login" method="POST">
+                     <form action="/gands/public/home/login" method="POST">
                         <fieldset>
                            <div class="field">
                               <label class="label_field">Username</label>

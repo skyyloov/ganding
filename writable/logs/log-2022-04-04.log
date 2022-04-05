@@ -1,0 +1,16 @@
+CRITICAL - 2022-04-04 09:26:45 --> mysqli_connect(): (HY000/1045): Access denied for user 'n1775814_sony'@'localhost' (using password: YES)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli_connect(...', 'C:\\xampp\\htdocs...', 82)
+#1 C:\xampp\htdocs\gands\app\Controllers\Home.php(82): mysqli_connect('localhost', 'n1775814_sony', '918256ccd741', 'n1775814_gandin...')
+#2 C:\xampp\htdocs\gands\system\CodeIgniter.php(824): App\Controllers\Home->login()
+#3 C:\xampp\htdocs\gands\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\gands\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gands\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-04 09:29:21 --> mysqli_connect(): (HY000/1045): Access denied for user 'n1775814_sony'@'localhost' (using password: YES)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli_connect(...', 'C:\\xampp\\htdocs...', 82)
+#1 C:\xampp\htdocs\gands\app\Controllers\Home.php(82): mysqli_connect('localhost', 'n1775814_sony', '918256ccd741', 'n1775814_gandin...')
+#2 C:\xampp\htdocs\gands\system\CodeIgniter.php(824): App\Controllers\Home->login()
+#3 C:\xampp\htdocs\gands\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\gands\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gands\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
