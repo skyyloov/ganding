@@ -23,7 +23,7 @@ $(document).ready(function(){
     //Added with the EDIT
     var data = $option.val();//to get content of "value" attrib
     console.log(data)
-    $('.unit').load('http://localhost:8080/gands/public/unit.php?id=' + data);  
+    $('.unit').load('http://localhost/gands/public/unit.php?id=' + data);  
 });
 });
 </script> 

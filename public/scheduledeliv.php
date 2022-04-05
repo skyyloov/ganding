@@ -41,7 +41,7 @@
 $(document).ready(function(){
    $('#scheduledeliv').on( 'click', function () {
 	        var data = $('#nilai').val();
-    $('.modal').load('http://localhost:8080/gands/public/scheduled.php?nilai=' + data);  
+    $('.modal').load('http://localhost/gands/public/scheduled.php?nilai=' + data);  
     $("#viewModal").modal("toggle");
    });
    

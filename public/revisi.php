@@ -8,7 +8,7 @@
             <h4 class="modal-title" id="myModalLabel" >Revisi Purchase Order</h4>
         </div>
         <div class="modal-body">
-        <form method="POST" action="http://localhost:8080/gands/public/customer/saverevisi" class="mt-5">
+        <form method="POST" action="http://localhost/gands/public/customer/saverevisi" class="mt-5">
 
 <input type="hidden" name="idpo" value="<?= $hasil[0]['id']; ?>">
 

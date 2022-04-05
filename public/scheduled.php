@@ -5,7 +5,7 @@
             <h4 class="modal-title" id="myModalLabel" >View Data</h4>
         </div>
         <div class="modal-body">
-          <form action="http://localhost:8080/gands/public/delivery/saveschedule" method="post">
+          <form action="http://localhost/gands/public/delivery/saveschedule" method="post">
              <input type="hidden" value="<?= $idpo; ?>" name="idpo" id="valval">
              <div class="input-group mb-3">
   <button class="btn btn-outline-secondary" type="button" id="buton">Submit</button>
@@ -45,7 +45,7 @@
     $("#buton").click(function(data){
        var date = $('#quantity').val();
        var dati = $('#valval').val();
-      $('.tanggal').load('http://localhost:8080/gands/public/tanggal.php?id=' + date + '&date=' + dati);
+      $('.tanggal').load('http://localhost/gands/public/tanggal.php?id=' + date + '&date=' + dati);
     });
       
     });

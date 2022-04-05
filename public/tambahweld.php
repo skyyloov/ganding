@@ -10,7 +10,7 @@
     <div class="panel-heading"></div>
     <div class="panel-body">
     
-       <form action="http://localhost:8080/gands/public/production/saveassy" method="POST">
+       <form action="http://localhost/gands/public/production/saveassy" method="POST">
        	<div class="control-group after-add-more">
 
 	         <div class="">
@@ -144,19 +144,7 @@ $(document).ready(function(){
     //Added with the EDIT
     var data = $option.val();//to get content of "value" attrib
     console.log(data)
-    $('.weldings').load('http://localhost:8080/gands/public/partwelding.php?id=' + data);  
+    $('.weldings').load('http://localhost/gands/public/partwelding.php?id=' + data);  
 });
 });
 </script>
-
-<!-- <script type="text/javascript">
-  $(document).ready(function(){
-  $('.weldings option[selected="selected"]').each(
-    function() {
-        $(this).removeAttr('selected');
-    }
-);
-
-$("#target option:first").attr('selected','selected');
-});
-</script> -->

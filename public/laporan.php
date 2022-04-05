@@ -5,7 +5,7 @@
                       $hasillaporan = mysqli_fetch_all($querylaporan, MYSQLI_ASSOC);
                       $hitunglaporan = mysqli_num_rows($querylaporan); ?>
                       <?php if($hitunglaporan > 0){ ?>
-                        <a href="http://localhost:8080/gands/public/cetaklaporan/<?= $proses; ?>/<?= $tgl; ?>" target="blank" class="btn btn-xs btn-warning" style="float:right;">Cetak Laporan</a>
+                        <a href="http://localhost/gands/public/cetaklaporan/<?= $proses; ?>/<?= $tgl; ?>" target="blank" class="btn btn-xs btn-warning" style="float:right;">Cetak Laporan</a>
 <table class="table">
                                           <thead>
                                              <tr>

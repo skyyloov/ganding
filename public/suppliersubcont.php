@@ -29,7 +29,7 @@ $(document).ready(function(){
     //Added with the EDIT
     var datasurjal = $option.val();//to get content of "value" attrib
     console.log(datasurjal)
-    $('.surjalkedatangan').load('http://localhost:8080/gands/public/surjalsubcont.php?idsupplier=' + datasurjal);  
+    $('.surjalkedatangan').load('http://localhost/gands/public/surjalsubcont.php?idsupplier=' + datasurjal);  
 });
 });
 </script> 

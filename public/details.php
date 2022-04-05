@@ -11,7 +11,7 @@
     <div class="modal-content">
         <div class="modal-header">
             <h4 class="modal-title" id="myModalLabel" >View Part <?= $hasilcust[0]['nama_customer']; ?></h4>
-            <a href=" http://localhost:8080/gands/public/part/buatpart/<?= $id; ?>" class="btn btn-info">Tambah Part</a>
+            <a href=" http://localhost/gands/public/part/buatpart/<?= $id; ?>" class="btn btn-info">Tambah Part</a>
             
         </div>
         <div class="modal-body">
@@ -39,7 +39,7 @@
       <td style="text-align:center;"><?= $a['kode_part']; ?></td>
       <td style="text-align:center;"><?= $a['proses']; ?></td>
       <td style="text-align:center;"><?= $a['spot']; ?></td>
-      <td><a href="http://localhost:8080/gands/public/part/<?= $a['id']; ?>" class="btn btn-xs btn-primary" style="float:center;">See Detail</a></td>
+      <td><a href="http://localhost/gands/public/part/<?= $a['id']; ?>" class="btn btn-xs btn-primary" style="float:center;">See Detail</a></td>
       
     </tr> 
    
