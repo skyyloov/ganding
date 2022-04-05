@@ -1,7 +1,7 @@
 
 <?php $id = $_GET['id']; ?>
 
-<?php $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php $koneksi = mysqli_connect('localhost','root','','ganding');
                         $query =  mysqli_query($koneksi, "select * from part where id = $id ");
                         $part = mysqli_fetch_all($query, MYSQLI_ASSOC); ?>
 
@@ -11,7 +11,7 @@
             <h4 class="modal-title" id="myModalLabel" >Edit Detail Part</h4>
         </div>
         <div class="modal-body">
-        <form method="POST" action="https://scmganding.site/public/part/saveeditpart" enctype="multipart/form-data" class="mt-5">
+        <form method="POST" action="http://localhost:8080/gands/public/part/saveeditpart" enctype="multipart/form-data" class="mt-5">
     <input type="hidden" name="material" value="<?= $part[0]['unit_material']; ?>" id="material">
         <input type="hidden" name="spoet" value="<?= $part[0]['spot']; ?>" id="spoet">
         <input type="hidden" name="process" value="<?= $part[0]['proses']; ?>" id="process">
@@ -163,7 +163,7 @@ $(document).ready(
     function(){
         var option = $('#spot').val();
     var idpart = $('#parts').val();
-    $('.sepot').load('https://scmganding.site/public/sepot.php?idedit=' + option +'&idpart=' + idpart);  
+    $('.sepot').load('http://localhost:8080/gands/public/sepot.php?idedit=' + option +'&idpart=' + idpart);  
     });
 </script>
 
@@ -176,7 +176,7 @@ $(document).ready(function(){
     //Added with the EDIT
     var data = $option.val();//to get content of "value" attrib
     console.log(data)
-    $('.sepot').load('https://scmganding.site/public/spotsz.php?idedit=' + data + '&idpart=' + idpartsz);  
+    $('.sepot').load('http://localhost:8080/gands/public/spotsz.php?idedit=' + data + '&idpart=' + idpartsz);  
 });
 });
 </script>
@@ -192,31 +192,3 @@ $(document).ready(function(){
           return true;
        }
   </script>
-
-<!-- <script>
-    swal({
-  title: 'Submit Password',
-  input: 'password',
-  showCancelButton: true,
-  confirmButtonText: 'Submit',
-  showLoaderOnConfirm: true,
-  preConfirm: function (password) {
-    return new Promise(function (resolve, reject) {
-      setTimeout(function() {
-        if (password !=== '123') {
-          reject('Wrong Password.')
-        } else {
-          resolve()
-        }
-      }, 2000)
-    })
-  },
-  allowOutsideClick: false
-}).then(function (password) {
-  swal({
-    type: 'success',
-    title: 'Ajax request finished!',
-    html: 'Submitted password: ' + password
-  })
-})
-</script> -->

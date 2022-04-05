@@ -4,7 +4,7 @@
                         <select class="form-control weld" name="part[]" id="welding" required>
                             <option value="0">-Pilih</option>
                             <?php
-                      $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+                      $koneksi = mysqli_connect('localhost','root','','ganding');
                       $query =  mysqli_query($koneksi, "select * from part where id_customer = $id ");
                       $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC);
                       foreach ($hasil as $item){ ?>

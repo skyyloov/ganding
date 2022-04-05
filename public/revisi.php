@@ -1,5 +1,5 @@
 <?php $id = $_GET['id']; ?>
-<?php $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php $koneksi = mysqli_connect('localhost','root','','ganding');
                         $query =  mysqli_query($koneksi, "select * from po where id = $id ");
                         $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC); ?>
 <div class="modal-dialog modal-lg  md-effect-1 ">
@@ -8,7 +8,7 @@
             <h4 class="modal-title" id="myModalLabel" >Revisi Purchase Order</h4>
         </div>
         <div class="modal-body">
-        <form method="POST" action="https://scmganding.site/public/customer/saverevisi" class="mt-5">
+        <form method="POST" action="http://localhost:8080/gands/public/customer/saverevisi" class="mt-5">
 
 <input type="hidden" name="idpo" value="<?= $hasil[0]['id']; ?>">
 

@@ -30,7 +30,7 @@
                         <select class="form-control" name="nama_customer" id="cust" required>
                         <option value="">-Pilih Customer</option>
                         <?php
-                     $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+                     $koneksi = mysqli_connect('localhost','root','','ganding');
                         $query =  mysqli_query($koneksi, "select * from customer");
                         $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC);
                         foreach ($hasil as $item){ ?>

@@ -1,6 +1,6 @@
 <?php $id=$_GET["id"];?>
 
-<?php $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php $koneksi = mysqli_connect('localhost','root','','ganding');
                         $querydetails =  mysqli_query($koneksi, "select * from purchasing where id_supplier = '$id' and status= 'belum' ");
                         $hasil = mysqli_fetch_all($querydetails, MYSQLI_ASSOC); ?>
 <?php $hitung = mysqli_num_rows($querydetails); ?>

@@ -141,7 +141,7 @@
                         <select class="form-control pilihsup" name="nama_supplier" id="suppliersz" required>
                         <option value="">-Pilih Supplier</option>
                         <?php
-                      $koneksis = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+                      $koneksis = mysqli_connect('localhost','root','','ganding');
                         $querysup =  mysqli_query($koneksis, "select * from supplier");
                         $hasilsup = mysqli_fetch_all($querysup, MYSQLI_ASSOC);
                         foreach ($hasilsup as $item){ ?>
@@ -171,7 +171,7 @@
 
                                                          </div>
                                                          <div class="col-md-2">
-<?php  $koneksis = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php  $koneksis = mysqli_connect('localhost','root','','ganding');
                         $querydetail =  mysqli_query($koneksis, "select * from supplier");
                         $hasildetail = mysqli_fetch_all($querydetail, MYSQLI_ASSOC); ?>
                                                          <div class="dropdown">

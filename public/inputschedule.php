@@ -1,6 +1,6 @@
 <?php $id = $_GET["idpart"]; ?>
 
-<?php $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php $koneksi = mysqli_connect('localhost','root','','ganding');
                         $query =  mysqli_query($koneksi, "select * from part where id = $id ");
                         $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC);
                         $hitung = mysqli_num_rows($query); ?>
@@ -85,10 +85,9 @@ $hitungpcs = mysqli_num_rows($querypcs);
         </div>
 
         <div class="modal-body">
-          
         <span style="font-size:15px;" >Stok Yang Tersedia DiWarehouse RM  <?= $stoktotal; ?> Pieces</span>
-<form action="https://scmganding.site/public/production/savescheduleproduksi" class="mt-2" method="POST">
-
+<form action="<?= base_url('production/savescheduleproduksi'); ?>" class="mt-2" method="POST">
+  
     <?php
               $nomor = 1;
               $num = 1;

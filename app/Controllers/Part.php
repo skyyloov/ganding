@@ -270,8 +270,7 @@ if ($tes['unit'] =='coil' || $tes['unit'] =='lembar' || $tes['unit'] =='sheet' )
             'diameter' => $tes['diameter']
            ]);
 
-           $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
-           $query =  mysqli_query($koneksi, "select * from part where kode_part = '$code' ");
+           $query =  mysqli_query($this->koneksi, "select * from part where kode_part = '$code' ");
            $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC);
            $idpart = $hasil[0]['id'];
            $proses = $tes['proses'];

@@ -1,6 +1,6 @@
 <?php $id=$_GET["id"];?>
 
-<?php $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php $koneksi = mysqli_connect('localhost','root','','ganding');
                         $query =  mysqli_query($koneksi, "select * from warehouse where id = $id ");
                         $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC); ?>
                         <?php foreach($hasil as $a){
@@ -362,8 +362,3 @@
     </div>
 
 <?php } ?>
-
-    <!-- <form action="/manajemenproyek/public/proyek/download" method="post">
-        <input type="file" value="<?= $a['file']; ?>" hidden >
-        <button type="submit" class="btn btn-xs btn-info">Download File</button>
-      </form> -->

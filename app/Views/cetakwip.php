@@ -28,7 +28,7 @@
 
 
 
-<?php  $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding'); ?>
+<?php  $koneksi = mysqli_connect('localhost','root','','ganding'); ?>
             <?php foreach($hasil as $a): ?>
 
                 <?php
@@ -92,7 +92,7 @@
 
           <td style="text-align:center;"><?= $hasilspot[0]['qty_in']; ?></td>
         <?php } ?>
-<?php $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php $koneksi = mysqli_connect('localhost','root','','ganding');
                       $querywhfg =  mysqli_query($koneksi, "select * from warehousefg where id_part = $idpart ");
                       $hasilwhfg = mysqli_fetch_all($querywhfg, MYSQLI_ASSOC);
                       $hitungwhfg = mysqli_num_rows($querywhfg); ?>

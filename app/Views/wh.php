@@ -1,6 +1,6 @@
 <?= $this->extend('layout/tampil'); ?>
 <?= $this->Section('contet'); ?>
-<?php $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding'); ?>
+<?php $koneksi = mysqli_connect('localhost','root','','ganding'); ?>
 <?php $queryyy =  mysqli_query($koneksi, "select * from warehouse where unit = 'lembar' ");
                                $hasu = mysqli_fetch_all($queryyy, MYSQLI_ASSOC); 
                                $hit = mysqli_num_rows($queryyy); ?>
@@ -58,7 +58,7 @@
                                              </div>
                                              <div class="tab-content" id="v-pills-tabContent">
                                                 <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-<?php $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php $koneksi = mysqli_connect('localhost','root','','ganding');
                    $queryy =  mysqli_query($koneksi, "select * from purchasing where konfirmasi = 'belum dikonfirmasi' or konfirmasi1 = 'belum dikonfirmasi' ");
                    $hasill = mysqli_fetch_all($queryy, MYSQLI_ASSOC); 
             $hitungg = mysqli_num_rows($queryy); ?>
@@ -110,7 +110,7 @@
                         <select class="form-control" name="id_supplier" id="suppp" required>
                         <option value="">-Pilih Supplier</option>
                         <?php
-                     $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+                     $koneksi = mysqli_connect('localhost','root','','ganding');
                         $query =  mysqli_query($koneksi, "select * from supplier");
                         $hasilsoep = mysqli_fetch_all($query, MYSQLI_ASSOC);
                         foreach ($hasilsoep as $item){ ?>
@@ -335,7 +335,7 @@
 <select class="form-control" name="nama_material" id="mats" required>
 <option value="">-Pilih Material</option>
 <?php
-$koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+$koneksi = mysqli_connect('localhost','root','','ganding');
 $query =  mysqli_query($koneksi, "select * from warehouse where unit = 'lembar' ");
 $hasilmat = mysqli_fetch_all($query, MYSQLI_ASSOC);
 foreach ($hasilmat as $item){ ?>
@@ -378,7 +378,7 @@ foreach ($hasilmat as $item){ ?>
 <select class="form-control" name="nama_material" id="matz" required>
 <option value="">-Pilih Material</option>
 <?php
-$koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+$koneksi = mysqli_connect('localhost','root','','ganding');
 $query =  mysqli_query($koneksi, "select * from warehouse where unit = 'lembar' ");
 $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC);
 foreach ($hasil as $item){ ?>
@@ -471,7 +471,7 @@ foreach ($hasil as $item){ ?>
                         <select class="form-control" name="nama_customer" id="supplier" required>
                         <option value="0">-Pilih Supplier</option>
                         <?php
-                      $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+                      $koneksi = mysqli_connect('localhost','root','','ganding');
                         $query =  mysqli_query($koneksi, "select * from supplier");
                         $hasilsup = mysqli_fetch_all($query, MYSQLI_ASSOC);
                         foreach ($hasilsup as $item){ ?>

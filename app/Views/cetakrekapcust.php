@@ -9,7 +9,7 @@
   <?= "Tidak Ada Data"; ?>
 </div>
     <?php }else{ ?>
-      <?php $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+      <?php $koneksi = mysqli_connect('localhost','root','','ganding');
                         $querysurjal =  mysqli_query($koneksi, "select * from surjalcust where nosurjal = '$nosurjal' ");
                         $hasilsurjal = mysqli_fetch_all($querysurjal, MYSQLI_ASSOC);
                         $idcust = $hasilsurjal[0]['id_customer']; ?>

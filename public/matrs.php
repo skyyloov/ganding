@@ -1,7 +1,7 @@
 <?php $no_po_supplier=$_GET["no_po_supplier"];?>
 
 <?php
-                      $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+                      $koneksi = mysqli_connect('localhost','root','','ganding');
                         $querybism =  mysqli_query($koneksi, "select * from purchasing where no_po_supplier = '$no_po_supplier' and status = 'belum' ");
                 $hitung = mysqli_num_rows($querybism);
                 $hasil = mysqli_fetch_all($querybism, MYSQLI_ASSOC);

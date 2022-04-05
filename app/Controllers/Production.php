@@ -194,8 +194,8 @@ class Production extends BaseController
 
             if ($proses > 0) {
 
-            $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
-            $queryfg =  mysqli_query($koneksi, "select * from warehousefg where id_part = $idpart ");
+            
+            $queryfg =  mysqli_query($this->koneksi, "select * from warehousefg where id_part = $idpart ");
             $hasilfg = mysqli_fetch_all($queryfg, MYSQLI_ASSOC);
             $hitungfg = mysqli_num_rows($queryfg);
 
@@ -215,8 +215,8 @@ class Production extends BaseController
             }
 
             }elseif ($proses == 0) {
-                $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
-            $querywh =  mysqli_query($koneksi, "select * from warehouse where kodepart = '$code' ");
+                
+            $querywh =  mysqli_query($this->koneksi, "select * from warehouse where kodepart = '$code' ");
             $hasilwh = mysqli_fetch_all($querywh, MYSQLI_ASSOC);
             $hitungwh = mysqli_num_rows($querywh);
 
@@ -249,8 +249,8 @@ class Production extends BaseController
 
               if ($process > 0) {
                   
-                  $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
-                  $queryfgs =  mysqli_query($koneksi, "select * from warehousefg where id_part = $idparts ");
+                  
+                  $queryfgs =  mysqli_query($this->koneksi, "select * from warehousefg where id_part = $idparts ");
                   $hasilfgs = mysqli_fetch_all($queryfgs, MYSQLI_ASSOC);
                   $hitungfgs = mysqli_num_rows($queryfgs);
                   
@@ -265,8 +265,8 @@ class Production extends BaseController
                       'qty' => $qtysisa
                     ]);
                 }elseif ($process == 0) {
-                    $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
-                    $querywhs =  mysqli_query($koneksi, "select * from warehouse where kodepart = '$codes' ");
+                    
+                    $querywhs =  mysqli_query($this->koneksi, "select * from warehouse where kodepart = '$codes' ");
                     $hasilwhs = mysqli_fetch_all($querywhs, MYSQLI_ASSOC);
                     $hitungwhs = mysqli_num_rows($querywhs);
                     
@@ -336,15 +336,15 @@ class Production extends BaseController
         $pcssht = (float) $part[0]['pcs_sheet'];
         $pcslbr = (float) $part[0]['pcs_lembar'];
         $kgpcs = (float) $part[0]['kg_pcs'];
-        $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+        
 
 if ($unit == 'lembar' || $unit == 'sheet') {
    
-        $querylbr =  mysqli_query($koneksi, "select * from warehouse where kodepart = '$code' and unit = 'lembar' ");
+        $querylbr =  mysqli_query($this->koneksi, "select * from warehouse where kodepart = '$code' and unit = 'lembar' ");
         $hasillbr = mysqli_fetch_all($querylbr, MYSQLI_ASSOC); 
     $hitunglbr = mysqli_num_rows($querylbr);
 
-        $querysht =  mysqli_query($koneksi, "select * from warehouse where kodepart = '$code' and unit = 'sheet' ");
+        $querysht =  mysqli_query($this->koneksi, "select * from warehouse where kodepart = '$code' and unit = 'sheet' ");
         $hasilsht = mysqli_fetch_all($querysht, MYSQLI_ASSOC); 
     $hitungsht = mysqli_num_rows($querysht);
 
@@ -388,7 +388,7 @@ if ($unit == 'lembar' || $unit == 'sheet') {
     }
 
 }elseif ($unit == 'coil') {
-    $querycoil =  mysqli_query($koneksi, "select * from warehouse where kodepart = '$code' and unit = 'coil' ");
+    $querycoil =  mysqli_query($this->koneksi, "select * from warehouse where kodepart = '$code' and unit = 'coil' ");
         $hasilcoil = mysqli_fetch_all($querycoil, MYSQLI_ASSOC); 
     $hitungcoil = mysqli_num_rows($querycoil);
 
@@ -415,7 +415,7 @@ if ($unit == 'lembar' || $unit == 'sheet') {
     }
 
 }elseif ($unit == 'pcs') {
-    $querypcs =  mysqli_query($koneksi, "select * from warehouse where kodepart = '$code' and unit = 'pcs' ");
+    $querypcs =  mysqli_query($this->koneksi, "select * from warehouse where kodepart = '$code' and unit = 'pcs' ");
     $hasilpcs = mysqli_fetch_all($querypcs, MYSQLI_ASSOC); 
 $hitungpcs = mysqli_num_rows($querypcs);
 
@@ -440,7 +440,7 @@ $hitungpcs = mysqli_num_rows($querypcs);
     }
 
 }elseif ($unit == 'tube') {
-    $querytube =  mysqli_query($koneksi, "select * from warehouse where kodepart = '$code' and unit = 'tube' ");
+    $querytube =  mysqli_query($this->koneksi, "select * from warehouse where kodepart = '$code' and unit = 'tube' ");
     $hasiltube = mysqli_fetch_all($querytube, MYSQLI_ASSOC); 
 $hitungtube = mysqli_num_rows($querytube);
 
@@ -466,7 +466,7 @@ $hitungtube = mysqli_num_rows($querytube);
 }
 
         
-        $query =  mysqli_query($koneksi, "select * from warehouse where kodepart = '$code' and unit = 'sheet' ");
+        $query =  mysqli_query($this->koneksi, "select * from warehouse where kodepart = '$code' and unit = 'sheet' ");
         $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC); 
     $hitung = mysqli_num_rows($query);
     
@@ -563,7 +563,7 @@ $hitungtube = mysqli_num_rows($querytube);
         ]);
 
 
-        $queryjadwal1 =  mysqli_query($koneksi, "select * from scheduleproduksi where id_part = $idpart and proses = 1 ");
+        $queryjadwal1 =  mysqli_query($this->koneksi, "select * from scheduleproduksi where id_part = $idpart and proses = 1 ");
             $hasiljadwal1 = mysqli_fetch_all($queryjadwal1, MYSQLI_ASSOC);
             $hitungjadwal1 = mysqli_num_rows($queryjadwal1);
 
@@ -603,12 +603,12 @@ $hitungtube = mysqli_num_rows($querytube);
             }
 
 
-            $querypo =  mysqli_query($koneksi, "select * from scheduleproduksi where id_part = $idpart and status = 'tidak masuk' ");
+            $querypo =  mysqli_query($this->koneksi, "select * from scheduleproduksi where id_part = $idpart and status = 'tidak masuk' ");
             $hasilpo = mysqli_fetch_all($querypo, MYSQLI_ASSOC);
             $hitungpo = mysqli_num_rows($querypo);
             if ($hitungpo < 1) {
 
-                $querypojadwal =  mysqli_query($koneksi, "select * from po where id_part = $idpart and status = 'belum close' ");
+                $querypojadwal =  mysqli_query($this->koneksi, "select * from po where id_part = $idpart and status = 'belum close' ");
             $hasilpojadwal = mysqli_fetch_all($querypojadwal, MYSQLI_ASSOC);
             $hitungpojadwal = mysqli_num_rows($querypojadwal);
 
@@ -651,7 +651,7 @@ $hitungtube = mysqli_num_rows($querytube);
             return redirect()->to('/production');
         }
         
-        $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+        
         $prs2 = $this->request->getPost();
         
         if(isset($prs2['ng'])){
@@ -767,7 +767,7 @@ $hitungtube = mysqli_num_rows($querytube);
             ]);
             
 
-            $queryjadwal2 =  mysqli_query($koneksi, "select * from scheduleproduksi where id_part = $idpart and proses = 2 ");
+            $queryjadwal2 =  mysqli_query($this->koneksi, "select * from scheduleproduksi where id_part = $idpart and proses = 2 ");
             $hasiljadwal2 = mysqli_fetch_all($queryjadwal2, MYSQLI_ASSOC);
             $hitungjadwal2 = mysqli_num_rows($queryjadwal2);
 
@@ -807,12 +807,12 @@ $hitungtube = mysqli_num_rows($querytube);
             }
 
 
-            $querypo =  mysqli_query($koneksi, "select * from scheduleproduksi where id_part = $idpart and status = 'tidak masuk' ");
+            $querypo =  mysqli_query($this->koneksi, "select * from scheduleproduksi where id_part = $idpart and status = 'tidak masuk' ");
             $hasilpo = mysqli_fetch_all($querypo, MYSQLI_ASSOC);
             $hitungpo = mysqli_num_rows($querypo);
             if ($hitungpo < 1) {
 
-                $querypojadwal =  mysqli_query($koneksi, "select * from po where id_part = $idpart and status = 'belum close' ");
+                $querypojadwal =  mysqli_query($this->koneksi, "select * from po where id_part = $idpart and status = 'belum close' ");
             $hasilpojadwal = mysqli_fetch_all($querypojadwal, MYSQLI_ASSOC);
             $hitungpojadwal = mysqli_num_rows($querypojadwal);
             if ($hitungpojadwal > 0) {
@@ -859,7 +859,7 @@ $hitungtube = mysqli_num_rows($querytube);
             return redirect()->to('/production');
         }
         
-        $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+        
         $prs3 = $this->request->getPost();
         
         if(isset($prs3['ng'])){
@@ -977,7 +977,7 @@ $hitungtube = mysqli_num_rows($querytube);
             ]);
             
 
-            $queryjadwal3 =  mysqli_query($koneksi, "select * from scheduleproduksi where id_part = $idpart and proses = 3 ");
+            $queryjadwal3 =  mysqli_query($this->koneksi, "select * from scheduleproduksi where id_part = $idpart and proses = 3 ");
             $hasiljadwal3 = mysqli_fetch_all($queryjadwal3, MYSQLI_ASSOC);
             $hitungjadwal3 = mysqli_num_rows($queryjadwal3);
 
@@ -1017,12 +1017,12 @@ $hitungtube = mysqli_num_rows($querytube);
             }
 
 
-            $querypo =  mysqli_query($koneksi, "select * from scheduleproduksi where id_part = $idpart and status = 'tidak masuk' ");
+            $querypo =  mysqli_query($this->koneksi, "select * from scheduleproduksi where id_part = $idpart and status = 'tidak masuk' ");
             $hasilpo = mysqli_fetch_all($querypo, MYSQLI_ASSOC);
             $hitungpo = mysqli_num_rows($querypo);
             if ($hitungpo < 1) {
 
-                $querypojadwal =  mysqli_query($koneksi, "select * from po where id_part = $idpart and status = 'belum close' ");
+                $querypojadwal =  mysqli_query($this->koneksi, "select * from po where id_part = $idpart and status = 'belum close' ");
             $hasilpojadwal = mysqli_fetch_all($querypojadwal, MYSQLI_ASSOC);
             $hitungpojadwal = mysqli_num_rows($querypojadwal);
             if ($hitungpojadwal > 0) {
@@ -1066,7 +1066,7 @@ $hitungtube = mysqli_num_rows($querytube);
             return redirect()->to('/production');
         }
         
-        $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+        
         $prs4 = $this->request->getPost();
         
         if(isset($prs4['ng'])){
@@ -1183,7 +1183,7 @@ $hitungtube = mysqli_num_rows($querytube);
             ]);
             
 
-            $queryjadwal4 =  mysqli_query($koneksi, "select * from scheduleproduksi where id_part = $idpart and proses = 4 ");
+            $queryjadwal4 =  mysqli_query($this->koneksi, "select * from scheduleproduksi where id_part = $idpart and proses = 4 ");
             $hasiljadwal4 = mysqli_fetch_all($queryjadwal4, MYSQLI_ASSOC);
             $hitungjadwal4 = mysqli_num_rows($queryjadwal4);
 
@@ -1223,12 +1223,12 @@ $hitungtube = mysqli_num_rows($querytube);
             }
 
 
-            $querypo =  mysqli_query($koneksi, "select * from scheduleproduksi where id_part = $idpart and status = 'tidak masuk' ");
+            $querypo =  mysqli_query($this->koneksi, "select * from scheduleproduksi where id_part = $idpart and status = 'tidak masuk' ");
             $hasilpo = mysqli_fetch_all($querypo, MYSQLI_ASSOC);
             $hitungpo = mysqli_num_rows($querypo);
             if ($hitungpo < 1) {
 
-                $querypojadwal =  mysqli_query($koneksi, "select * from po where id_part = $idpart and status = 'belum close' ");
+                $querypojadwal =  mysqli_query($this->koneksi, "select * from po where id_part = $idpart and status = 'belum close' ");
             $hasilpojadwal = mysqli_fetch_all($querypojadwal, MYSQLI_ASSOC);
             $hitungpojadwal = mysqli_num_rows($querypojadwal);
             if ($hitungpojadwal > 0 ) {
@@ -1271,7 +1271,7 @@ $hitungtube = mysqli_num_rows($querytube);
             return redirect()->to('/production');
         }
         
-        $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+        
         $prs5 = $this->request->getPost();
         
         if(isset($prs5['ng'])){
@@ -1388,7 +1388,7 @@ $hitungtube = mysqli_num_rows($querytube);
             ]);
             
 
-            $queryjadwal5 =  mysqli_query($koneksi, "select * from scheduleproduksi where id_part = $idpart and proses = 5 ");
+            $queryjadwal5 =  mysqli_query($this->koneksi, "select * from scheduleproduksi where id_part = $idpart and proses = 5 ");
             $hasiljadwal5 = mysqli_fetch_all($queryjadwal5, MYSQLI_ASSOC);
             $hitungjadwal5 = mysqli_num_rows($queryjadwal5);
 
@@ -1428,12 +1428,12 @@ $hitungtube = mysqli_num_rows($querytube);
             }
 
 
-            $querypo =  mysqli_query($koneksi, "select * from scheduleproduksi where id_part = $idpart and status = 'tidak masuk' ");
+            $querypo =  mysqli_query($this->koneksi, "select * from scheduleproduksi where id_part = $idpart and status = 'tidak masuk' ");
             $hasilpo = mysqli_fetch_all($querypo, MYSQLI_ASSOC);
             $hitungpo = mysqli_num_rows($querypo);
             if ($hitungpo < 1) {
 
-                $querypojadwal =  mysqli_query($koneksi, "select * from po where id_part = $idpart and status = 'belum close' ");
+                $querypojadwal =  mysqli_query($this->koneksi, "select * from po where id_part = $idpart and status = 'belum close' ");
             $hasilpojadwal = mysqli_fetch_all($querypojadwal, MYSQLI_ASSOC);
             $hitungpojadwal = mysqli_num_rows($querypojadwal);
             if ($hitungpojadwal > 0) {
@@ -1478,7 +1478,7 @@ $hitungtube = mysqli_num_rows($querytube);
             return redirect()->to('/production');
         }
         
-        $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+        
         $prs6 = $this->request->getPost();
         
         if(isset($prs6['ng'])){
@@ -1595,7 +1595,7 @@ $hitungtube = mysqli_num_rows($querytube);
             ]);
             
 
-            $queryjadwal6 =  mysqli_query($koneksi, "select * from scheduleproduksi where id_part = $idpart and proses = 6 ");
+            $queryjadwal6 =  mysqli_query($this->koneksi, "select * from scheduleproduksi where id_part = $idpart and proses = 6 ");
             $hasiljadwal6 = mysqli_fetch_all($queryjadwal6, MYSQLI_ASSOC);
             $hitungjadwal6 = mysqli_num_rows($queryjadwal6);
 
@@ -1635,12 +1635,12 @@ $hitungtube = mysqli_num_rows($querytube);
             }
 
 
-            $querypo =  mysqli_query($koneksi, "select * from scheduleproduksi where id_part = $idpart and status = 'tidak masuk' ");
+            $querypo =  mysqli_query($this->koneksi, "select * from scheduleproduksi where id_part = $idpart and status = 'tidak masuk' ");
             $hasilpo = mysqli_fetch_all($querypo, MYSQLI_ASSOC);
             $hitungpo = mysqli_num_rows($querypo);
             if ($hitungpo < 1) {
 
-                $querypojadwal =  mysqli_query($koneksi, "select * from po where id_part = $idpart and status = 'belum close' ");
+                $querypojadwal =  mysqli_query($this->koneksi, "select * from po where id_part = $idpart and status = 'belum close' ");
             $hasilpojadwal = mysqli_fetch_all($querypojadwal, MYSQLI_ASSOC);
             $hitungpojadwal = mysqli_num_rows($querypojadwal);
             if ($hitungpojadwal > 0) {
@@ -1683,7 +1683,7 @@ $hitungtube = mysqli_num_rows($querytube);
             return redirect()->to('/production');
         }
         
-        $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+        
         $prs7 = $this->request->getPost();
         
         if(isset($prs7['ng'])){
@@ -1790,7 +1790,7 @@ $hitungtube = mysqli_num_rows($querytube);
             ]);
             
 
-            $queryjadwal7 =  mysqli_query($koneksi, "select * from scheduleproduksi where id_part = $idpart and proses = 7 ");
+            $queryjadwal7 =  mysqli_query($this->koneksi, "select * from scheduleproduksi where id_part = $idpart and proses = 7 ");
             $hasiljadwal7 = mysqli_fetch_all($queryjadwal7, MYSQLI_ASSOC);
             $hitungjadwal7 = mysqli_num_rows($queryjadwal7);
 
@@ -1830,12 +1830,12 @@ $hitungtube = mysqli_num_rows($querytube);
             }
 
 
-            $querypo =  mysqli_query($koneksi, "select * from scheduleproduksi where id_part = $idpart and status = 'tidak masuk' ");
+            $querypo =  mysqli_query($this->koneksi, "select * from scheduleproduksi where id_part = $idpart and status = 'tidak masuk' ");
             $hasilpo = mysqli_fetch_all($querypo, MYSQLI_ASSOC);
             $hitungpo = mysqli_num_rows($querypo);
             if ($hitungpo < 1) {
 
-                $querypojadwal =  mysqli_query($koneksi, "select * from po where id_part = $idpart and status = 'belum close' ");
+                $querypojadwal =  mysqli_query($this->koneksi, "select * from po where id_part = $idpart and status = 'belum close' ");
             $hasilpojadwal = mysqli_fetch_all($querypojadwal, MYSQLI_ASSOC);
             $hitungpojadwal = mysqli_num_rows($querypojadwal);
             if ($hitungpojadwal > 0) {
@@ -1880,7 +1880,7 @@ $hitungtube = mysqli_num_rows($querytube);
             return redirect()->to('/production');
         }
         
-        $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+        
         
         $prsspot = $this->request->getPost();
         
@@ -2005,7 +2005,7 @@ $hitungtube = mysqli_num_rows($querytube);
         }
 
 
-        $queryjadwal8 =  mysqli_query($koneksi, "select * from scheduleproduksi where id_part = $idpart and proses = 8 ");
+        $queryjadwal8 =  mysqli_query($this->koneksi, "select * from scheduleproduksi where id_part = $idpart and proses = 8 ");
         $hasiljadwal8 = mysqli_fetch_all($queryjadwal8, MYSQLI_ASSOC);
         $hitungjadwal8 = mysqli_num_rows($queryjadwal8);
 
@@ -2045,12 +2045,12 @@ $hitungtube = mysqli_num_rows($querytube);
         }   
 
 
-        $querypo =  mysqli_query($koneksi, "select * from scheduleproduksi where id_part = $idpart and status = 'tidak masuk' ");
+        $querypo =  mysqli_query($this->koneksi, "select * from scheduleproduksi where id_part = $idpart and status = 'tidak masuk' ");
         $hasilpo = mysqli_fetch_all($querypo, MYSQLI_ASSOC);
         $hitungpo = mysqli_num_rows($querypo);
         if ($hitungpo < 1) {
 
-            $querypojadwal =  mysqli_query($koneksi, "select * from po where id_part = $idpart and status = 'belum close' ");
+            $querypojadwal =  mysqli_query($this->koneksi, "select * from po where id_part = $idpart and status = 'belum close' ");
         $hasilpojadwal = mysqli_fetch_all($querypojadwal, MYSQLI_ASSOC);
         $hitungpojadwal = mysqli_num_rows($querypojadwal);
         if ($hitungpojadwal > 0) {
@@ -2225,7 +2225,7 @@ date_default_timezone_set('Asia/Jakarta');
     {
         $schedule = $this->request->getPost();
         
-        $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+        
         
 
 
@@ -2242,10 +2242,10 @@ date_default_timezone_set('Asia/Jakarta');
                 
             }
 
-            $queryprosesz1 =  mysqli_query($koneksi, "select * from proses1 where id_part = $idpart1  ");
+            $queryprosesz1 =  mysqli_query($this->koneksi, "select * from proses1 where id_part = $idpart1  ");
             $hasilprosesz1 = mysqli_fetch_all($queryprosesz1, MYSQLI_ASSOC);
             
-            $querypo =  mysqli_query($koneksi, "select * from po where id_part = $idpart1 and status = 'belum close' ");
+            $querypo =  mysqli_query($this->koneksi, "select * from po where id_part = $idpart1 and status = 'belum close' ");
             $hasilpo = mysqli_fetch_all($querypo, MYSQLI_ASSOC);
             $hitungpo = mysqli_num_rows($querypo);
             $idpo = $hasilpo[0]['id'];
@@ -2254,7 +2254,7 @@ date_default_timezone_set('Asia/Jakarta');
                 'schedule' =>'masuk' 
             ]);
 
-            $query1 =  mysqli_query($koneksi, "select * from scheduleproduksi where id_part = $idpart1 and proses = 1 ");
+            $query1 =  mysqli_query($this->koneksi, "select * from scheduleproduksi where id_part = $idpart1 and proses = 1 ");
             $hasil1 = mysqli_fetch_all($query1, MYSQLI_ASSOC);
             $hitung1 = mysqli_num_rows($query1);
 
@@ -2285,12 +2285,12 @@ date_default_timezone_set('Asia/Jakarta');
         if (isset($schedule['2'])) {
             $idpart2 = $schedule['2'];
 
-            $queryprosesz2 =  mysqli_query($koneksi, "select * from proses2 where id_part = $idpart2  ");
+            $queryprosesz2 =  mysqli_query($this->koneksi, "select * from proses2 where id_part = $idpart2  ");
             $hasilprosesz2 = mysqli_fetch_all($queryprosesz2, MYSQLI_ASSOC);
 
             $qtydiproses2 = (int) $hasilprosesz2[0]['plan2'];
 
-            $querypo =  mysqli_query($koneksi, "select * from po where id_part = $idpart2 and status = 'belum close' ");
+            $querypo =  mysqli_query($this->koneksi, "select * from po where id_part = $idpart2 and status = 'belum close' ");
             $hasilpo = mysqli_fetch_all($querypo, MYSQLI_ASSOC);
             $hitungpo = mysqli_num_rows($querypo);
             $idpo = $hasilpo[0]['id'];
@@ -2299,7 +2299,7 @@ date_default_timezone_set('Asia/Jakarta');
                 'schedule' =>'masuk' 
             ]);
 
-            $query2 =  mysqli_query($koneksi, "select * from scheduleproduksi where id_part = $idpart2 and proses = 2 ");
+            $query2 =  mysqli_query($this->koneksi, "select * from scheduleproduksi where id_part = $idpart2 and proses = 2 ");
             $hasil2 = mysqli_fetch_all($query2, MYSQLI_ASSOC);
             $hitung2 = mysqli_num_rows($query2);
 
@@ -2330,12 +2330,12 @@ date_default_timezone_set('Asia/Jakarta');
         if (isset($schedule['3'])) {
             $idpart3 = $schedule['3']; 
 
-            $queryprosesz3 =  mysqli_query($koneksi, "select * from proses3 where id_part = $idpart3  ");
+            $queryprosesz3 =  mysqli_query($this->koneksi, "select * from proses3 where id_part = $idpart3  ");
             $hasilprosesz3 = mysqli_fetch_all($queryprosesz3, MYSQLI_ASSOC);
 
             $qtydiproses3 = (int) $hasilprosesz3[0]['plan3'];
 
-            $querypo =  mysqli_query($koneksi, "select * from po where id_part = $idpart3 and status = 'belum close' ");
+            $querypo =  mysqli_query($this->koneksi, "select * from po where id_part = $idpart3 and status = 'belum close' ");
             $hasilpo = mysqli_fetch_all($querypo, MYSQLI_ASSOC);
             $hitungpo = mysqli_num_rows($querypo);
             $idpo = $hasilpo[0]['id'];
@@ -2344,7 +2344,7 @@ date_default_timezone_set('Asia/Jakarta');
                 'schedule' =>'masuk' 
             ]);
 
-            $query3 =  mysqli_query($koneksi, "select * from scheduleproduksi where id_part = $idpart3 and proses = 3 ");
+            $query3 =  mysqli_query($this->koneksi, "select * from scheduleproduksi where id_part = $idpart3 and proses = 3 ");
             $hasil3 = mysqli_fetch_all($query3, MYSQLI_ASSOC);
             $hitung3 = mysqli_num_rows($query3);
 
@@ -2375,12 +2375,12 @@ date_default_timezone_set('Asia/Jakarta');
         if (isset($schedule['4'])) {
             $idpart4 = $schedule['4'];
 
-            $queryprosesz4 =  mysqli_query($koneksi, "select * from proses4 where id_part = $idpart4  ");
+            $queryprosesz4 =  mysqli_query($this->koneksi, "select * from proses4 where id_part = $idpart4  ");
             $hasilprosesz4 = mysqli_fetch_all($queryprosesz4, MYSQLI_ASSOC);
 
             $qtydiproses4 = (int) $hasilprosesz4[0]['plan4'];
 
-            $querypo =  mysqli_query($koneksi, "select * from po where id_part = $idpart4 and status = 'belum close' ");
+            $querypo =  mysqli_query($this->koneksi, "select * from po where id_part = $idpart4 and status = 'belum close' ");
             $hasilpo = mysqli_fetch_all($querypo, MYSQLI_ASSOC);
             $hitungpo = mysqli_num_rows($querypo);
             $idpo = $hasilpo[0]['id'];
@@ -2389,7 +2389,7 @@ date_default_timezone_set('Asia/Jakarta');
                 'schedule' =>'masuk' 
             ]);
 
-            $query4 =  mysqli_query($koneksi, "select * from scheduleproduksi where id_part = $idpart4 and proses = 4 ");
+            $query4 =  mysqli_query($this->koneksi, "select * from scheduleproduksi where id_part = $idpart4 and proses = 4 ");
             $hasil4 = mysqli_fetch_all($query4, MYSQLI_ASSOC);
             $hitung4 = mysqli_num_rows($query4);
 
@@ -2420,12 +2420,12 @@ date_default_timezone_set('Asia/Jakarta');
         if (isset($schedule['5'])) {
             $idpart5 = $schedule['5'];
 
-            $queryprosesz5 =  mysqli_query($koneksi, "select * from proses5 where id_part = $idpart5  ");
+            $queryprosesz5 =  mysqli_query($this->koneksi, "select * from proses5 where id_part = $idpart5  ");
             $hasilprosesz5 = mysqli_fetch_all($queryprosesz5, MYSQLI_ASSOC);
 
             $qtydiproses5 = (int) $hasilprosesz5[0]['plan5'];
 
-            $querypo =  mysqli_query($koneksi, "select * from po where id_part = $idpart5 and status = 'belum close' ");
+            $querypo =  mysqli_query($this->koneksi, "select * from po where id_part = $idpart5 and status = 'belum close' ");
             $hasilpo = mysqli_fetch_all($querypo, MYSQLI_ASSOC);
             $hitungpo = mysqli_num_rows($querypo);
             $idpo = $hasilpo[0]['id'];
@@ -2434,7 +2434,7 @@ date_default_timezone_set('Asia/Jakarta');
                 'schedule' =>'masuk' 
             ]);
 
-            $query5 =  mysqli_query($koneksi, "select * from scheduleproduksi where id_part = $idpart5 and proses = 5 ");
+            $query5 =  mysqli_query($this->koneksi, "select * from scheduleproduksi where id_part = $idpart5 and proses = 5 ");
             $hasil5 = mysqli_fetch_all($query5, MYSQLI_ASSOC);
             $hitung5 = mysqli_num_rows($query5);
 
@@ -2466,11 +2466,11 @@ date_default_timezone_set('Asia/Jakarta');
         if (isset($schedule['6'])) {
             $idpart6 = $schedule['6'];
             
-            $queryprosesz6 =  mysqli_query($koneksi, "select * from proses6 where id_part = $idpart6  ");
+            $queryprosesz6 =  mysqli_query($this->koneksi, "select * from proses6 where id_part = $idpart6  ");
             $hasilprosesz6 = mysqli_fetch_all($queryprosesz6, MYSQLI_ASSOC);
             $qtydiproses6 = (int) $hasilprosesz6[0]['plan6'];
 
-            $querypo =  mysqli_query($koneksi, "select * from po where id_part = $idpart6 and status = 'belum close' ");
+            $querypo =  mysqli_query($this->koneksi, "select * from po where id_part = $idpart6 and status = 'belum close' ");
             $hasilpo = mysqli_fetch_all($querypo, MYSQLI_ASSOC);
             $hitungpo = mysqli_num_rows($querypo);
             $idpo = $hasilpo[0]['id'];
@@ -2479,7 +2479,7 @@ date_default_timezone_set('Asia/Jakarta');
                 'schedule' =>'masuk' 
             ]);
 
-            $query6 =  mysqli_query($koneksi, "select * from scheduleproduksi where id_part = $idpart6 and proses = 6 ");
+            $query6 =  mysqli_query($this->koneksi, "select * from scheduleproduksi where id_part = $idpart6 and proses = 6 ");
             $hasil6 = mysqli_fetch_all($query6, MYSQLI_ASSOC);
             $hitung6 = mysqli_num_rows($query6);
 
@@ -2510,11 +2510,11 @@ date_default_timezone_set('Asia/Jakarta');
         if (isset($schedule['7'])) {
             $idpart7 = $schedule['7'];
             
-            $queryprosesz7 =  mysqli_query($koneksi, "select * from proses7 where id_part = $idpart7  ");
+            $queryprosesz7 =  mysqli_query($this->koneksi, "select * from proses7 where id_part = $idpart7  ");
             $hasilprosesz7 = mysqli_fetch_all($queryprosesz7, MYSQLI_ASSOC);
             $qtydiproses7 = (int) $hasilprosesz7[0]['plan7'];
             
-            $querypo =  mysqli_query($koneksi, "select * from po where id_part = $idpart7 and status = 'belum close' ");
+            $querypo =  mysqli_query($this->koneksi, "select * from po where id_part = $idpart7 and status = 'belum close' ");
             $hasilpo = mysqli_fetch_all($querypo, MYSQLI_ASSOC);
             $hitungpo = mysqli_num_rows($querypo);
             $idpo = $hasilpo[0]['id'];
@@ -2523,7 +2523,7 @@ date_default_timezone_set('Asia/Jakarta');
                 'schedule' =>'masuk' 
             ]);
 
-            $query7 =  mysqli_query($koneksi, "select * from scheduleproduksi where id_part = $idpart7 and proses = 7 ");
+            $query7 =  mysqli_query($this->koneksi, "select * from scheduleproduksi where id_part = $idpart7 and proses = 7 ");
             $hasil7 = mysqli_fetch_all($query7, MYSQLI_ASSOC);
             $hitung7 = mysqli_num_rows($query7);
 
@@ -2554,11 +2554,11 @@ date_default_timezone_set('Asia/Jakarta');
         if (isset($schedule['8'])) {
             $idpart8 = $schedule['8'];
             
-            $queryprosesz8 =  mysqli_query($koneksi, "select * from spot where id_part = $idpart8  ");
+            $queryprosesz8 =  mysqli_query($this->koneksi, "select * from spot where id_part = $idpart8  ");
             $hasilprosesz8 = mysqli_fetch_all($queryprosesz8, MYSQLI_ASSOC);
             $qtydiproses8 = (int) $hasilprosesz8[0]['qty_in'];
             
-            $querypo =  mysqli_query($koneksi, "select * from po where id_part = $idpart8 and status = 'belum close' ");
+            $querypo =  mysqli_query($this->koneksi, "select * from po where id_part = $idpart8 and status = 'belum close' ");
             $hasilpo = mysqli_fetch_all($querypo, MYSQLI_ASSOC);
             $hitungpo = mysqli_num_rows($querypo);
             $idpo = $hasilpo[0]['id'];
@@ -2567,7 +2567,7 @@ date_default_timezone_set('Asia/Jakarta');
                 'schedule' =>'masuk' 
             ]);
 
-            $query8 =  mysqli_query($koneksi, "select * from scheduleproduksi where id_part = $idpart8 and proses = 8 ");
+            $query8 =  mysqli_query($this->koneksi, "select * from scheduleproduksi where id_part = $idpart8 and proses = 8 ");
             $hasil8 = mysqli_fetch_all($query8, MYSQLI_ASSOC);
             $hitung8 = mysqli_num_rows($query8);
 

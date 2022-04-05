@@ -79,8 +79,6 @@ class Home extends BaseController
     public function login()
     {
 
-        $koneksi = mysqli_connect('localhost', 'n1775814_sony','918256ccd741','n1775814_ganding');
-
 if (mysqli_connect_errno()){
     echo "Koneksi Ke Database Gagal : ".mysqli_connect_error();
 }
@@ -90,7 +88,7 @@ $login = $this->request->getPost();
 $username = $login['username'];
 $password = $login['password'];
 
-$query = mysqli_query($koneksi, "select * from admin where username='$username' and password='$password'");
+$query = mysqli_query($this->koneksi, "select * from admin where username='$username' and password='$password'");
 
 $check = mysqli_num_rows($query);
 $_SESSION['username']=$username;

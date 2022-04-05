@@ -51,7 +51,7 @@
                                                             </h2>
                                                             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                                                 <div class="accordion-body">
-                    <?php  $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+                    <?php  $koneksi = mysqli_connect('localhost','root','','ganding');
                       $query =  mysqli_query($koneksi, "select * from po where status = 'belum close' ");
                       $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC);
                       $hitung = mysqli_num_rows($query); ?>
@@ -95,7 +95,7 @@
                         <select class="form-control" name="nama_customer" id="customer" required>
                         <option value="0">-Pilih Customer</option>
                         <?php
-                     $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+                     $koneksi = mysqli_connect('localhost','root','','ganding');
                         $query =  mysqli_query($koneksi, "select * from customer");
                         $hasilsup = mysqli_fetch_all($query, MYSQLI_ASSOC);
                         foreach ($hasilsup as $item){ ?>
@@ -136,7 +136,7 @@
           <select class="form-control" name="nama_part" id="partfinish" required>
              <option value="">~Pilih Part~</option>
              <?php
-                     $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+                     $koneksi = mysqli_connect('localhost','root','','ganding');
                       $query =  mysqli_query($koneksi, "select * from warehousefg");
                       $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC);
                       foreach ($hasil as $item){ ?>
@@ -178,7 +178,7 @@
           <select class="form-control" name="id_fg" id="fg" required>
              <option value="">~Pilih FG~</option>
              <?php
-                     $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+                     $koneksi = mysqli_connect('localhost','root','','ganding');
                       $query =  mysqli_query($koneksi, "select * from welding");
                       $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC);
                       foreach ($hasil as $item){ ?>

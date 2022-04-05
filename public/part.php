@@ -7,7 +7,7 @@
                        <select class="form-control" name="nama_part" id="part" required>
                         <option value="">-Pilih Part</option>
                         <?php
-                      $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+                      $koneksi = mysqli_connect('localhost','root','','ganding');
                         $query =  mysqli_query($koneksi, "select * from part where id_customer = '$id' ");
                         $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC);
                         foreach ($hasil as $item){ ?>
@@ -23,7 +23,7 @@ $(document).ready(function(){
     //Added with the EDIT
     var data = $option.val();//to get content of "value" attrib
     console.log(data)
-    $('.unit').load('https://scmganding.site/public/unit.php?id=' + data);  
+    $('.unit').load('http://localhost:8080/gands/public/unit.php?id=' + data);  
 });
 });
 </script> 

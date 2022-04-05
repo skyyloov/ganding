@@ -144,8 +144,7 @@ session()->setFlashdata('pesan','Data Customer Berhasil Ditambahkan!');
         $tes = $this->request->getPost();
         $idpart = $tes['nama_part'];
 
-        $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
-        $query =  mysqli_query($koneksi, "select * from part where id = $tes[nama_part] ");
+        $query =  mysqli_query($this->koneksi, "select * from part where id = $tes[nama_part] ");
         $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC);
         foreach ($hasil as $item){
         $nama_part = $item['nama_part'];
@@ -175,19 +174,6 @@ session()->setFlashdata('pesan','Data Customer Berhasil Ditambahkan!');
 
     public function mrp()
     {
-        // $po = $this->poModel->getPo();
-        
-        // foreach ($po as $a) {
-        //     $kode_part = $a['no_po'];
-        // }
-        
-        // $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
-        // $query =  mysqli_query($koneksi, "select no_po from po ");
-        // $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC);
-        // foreach ($hasil as $a) {
-        //   $no_po = $a['no_po'];
-        // }
-        // dd($no_po);
         if (isset($_SESSION['status'])) {
         $data = [
             'tittle' => 'Home | MRP'

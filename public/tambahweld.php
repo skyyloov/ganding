@@ -10,7 +10,7 @@
     <div class="panel-heading"></div>
     <div class="panel-body">
     
-       <form action="https://scmganding.site/public/production/saveassy" method="POST">
+       <form action="http://localhost:8080/gands/public/production/saveassy" method="POST">
        	<div class="control-group after-add-more">
 
 	         <div class="">
@@ -22,7 +22,7 @@
                         <select class="form-control" name="customer" id="customerwelding" required>
                             <option value="">-Pilih</option>
                             <?php
-                      $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+                      $koneksi = mysqli_connect('localhost','root','','ganding');
                       $query =  mysqli_query($koneksi, "select * from customer ");
                       $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC);
                       foreach ($hasil as $item){ ?>
@@ -35,7 +35,7 @@
                         <select class="form-control" name="part[]" id="welding" required>
                             <option value="">-Pilih</option>
                             <?php
-                      $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+                      $koneksi = mysqli_connect('localhost','root','','ganding');
                       $query =  mysqli_query($koneksi, "select * from part where id = 0 ");
                       $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC);
                       foreach ($hasil as $item){ ?>
@@ -69,7 +69,7 @@
                         <select class="form-control" name="part[]" id="welding" required>
                             <option value="">-Pilih</option>
                             <?php
-                      $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+                      $koneksi = mysqli_connect('localhost','root','','ganding');
                       $query =  mysqli_query($koneksi, "select * from part where id = 0 ");
                       $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC);
                       foreach ($hasil as $item){ ?>
@@ -144,7 +144,7 @@ $(document).ready(function(){
     //Added with the EDIT
     var data = $option.val();//to get content of "value" attrib
     console.log(data)
-    $('.weldings').load('https://scmganding.site/public/partwelding.php?id=' + data);  
+    $('.weldings').load('http://localhost:8080/gands/public/partwelding.php?id=' + data);  
 });
 });
 </script>

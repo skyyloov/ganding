@@ -3,7 +3,7 @@
 
 
 
-<?php  $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding'); ?>
+<?php  $koneksi = mysqli_connect('localhost','root','','ganding'); ?>
 <?php  $querycetak =  mysqli_query($koneksi, "select * from laporanproduksi where proses = '$proses' and tanggal like '$tgl%' ");
                       $hasilcetak = mysqli_fetch_all($querycetak, MYSQLI_ASSOC); ?>
 <div class="midde_cont">

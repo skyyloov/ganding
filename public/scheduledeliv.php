@@ -1,6 +1,6 @@
 <?php $id = $_GET["id"]; ?>
 <input type="hidden" value="<?= $id; ?>" id="nilai">
-<?php $koneksi =mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php $koneksi =mysqli_connect('localhost','root','','ganding');
                       $querydeliv =  mysqli_query($koneksi, "select * from scheduledelivery where id_po = $id and status = 'belum close' ");
                       $hasildeliv = mysqli_fetch_all($querydeliv, MYSQLI_ASSOC);
                       $hitungdeliv = mysqli_num_rows($querydeliv); ?>
@@ -41,7 +41,7 @@
 $(document).ready(function(){
    $('#scheduledeliv').on( 'click', function () {
 	        var data = $('#nilai').val();
-    $('.modal').load('https://scmganding.site/public/scheduled.php?nilai=' + data);  
+    $('.modal').load('http://localhost:8080/gands/public/scheduled.php?nilai=' + data);  
     $("#viewModal").modal("toggle");
    });
    

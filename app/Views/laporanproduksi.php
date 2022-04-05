@@ -4,7 +4,7 @@
 <?php  date_default_timezone_set('Asia/Jakarta');
         $date =date('Y-m-d');  ?>
 
-<?php  $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding'); ?>
+<?php  $koneksi = mysqli_connect('localhost','root','','ganding'); ?>
 <div class="midde_cont">
                   <div class="container-fluid">
                      <div class="row column_title">

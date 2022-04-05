@@ -1,6 +1,6 @@
 <?php $idsup = $_GET['idsupplier']; ?>
 
- <?php $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding'); ?>
+ <?php $koneksi = mysqli_connect('localhost','root','','ganding'); ?>
                         
 <?php  $querysoep =  mysqli_query($koneksi, "select DISTINCT nomorsurjal from surjaldatangsubcont where idsup = $idsup ");
                 $hitung = mysqli_num_rows($querysoep);?>
@@ -29,7 +29,7 @@ $(document).ready(function(){
     //Added with the EDIT
     var datasurjal = $option.val();//to get content of "value" attrib
     console.log(datasurjal)
-    $('.surjalkedatangan').load('https://scmganding.site/public/surjalsubcont.php?idsupplier=' + datasurjal);  
+    $('.surjalkedatangan').load('http://localhost:8080/gands/public/surjalsubcont.php?idsupplier=' + datasurjal);  
 });
 });
 </script> 

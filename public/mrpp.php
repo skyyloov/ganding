@@ -4,7 +4,7 @@
 <!-- DataTable -->
 <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
-<?php $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding'); ?>
+<?php $koneksi = mysqli_connect('localhost','root','','ganding'); ?>
 
 <?php $id=$_GET["id"];?>
 <?php $tanggul=$_GET["tgl"]; ?>
@@ -40,7 +40,7 @@ date_default_timezone_set('Asia/Jakarta');
                          
                       
 <a style="text-float:center;">  PO BULAN <?= $tanggul; ?>   </a>   
-<form action="https://scmganding.site/public/home/cetakmrp" method="post">
+<form action="http://localhost:8080/gands/public/home/cetakmrp" method="post">
     <input type="hidden" name="id" value="<?= $id; ?>">
     <input type="hidden" name="tanggal" value="<?= $tanggul; ?>">
     <button type="submit" style="float:right;" target="blank" class="btn btn-xs btn-warning"  name="submit" >Cetak MRP</button>
@@ -109,7 +109,7 @@ date_default_timezone_set('Asia/Jakarta');
                     <td style="text-align:center;"><?= $a['kg_pcs']; ?></td>
                     <td><?= $a['sheet_lembar']; ?></td>
  
- <?php $koneks = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+ <?php $koneks = mysqli_connect('localhost','root','','ganding');
 $queryy =  mysqli_query($koneks, "select * from warehouse where kodepart = '$kodepart' and unit = 'lembar' and id_customer = $idcust ");
 $ha = mysqli_num_rows($queryy);
 $hasul = mysqli_fetch_all($queryy, MYSQLI_ASSOC); ?>                
@@ -122,7 +122,7 @@ $hasul = mysqli_fetch_all($queryy, MYSQLI_ASSOC); ?>
 
  ?>
 
-<?php $konek = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php $konek = mysqli_connect('localhost','root','','ganding');
 $queryyy =  mysqli_query($konek, "select * from warehouse where kodepart = '$kodepart' and unit = 'sheet' and id_customer = $idcust ");
 $haa = mysqli_num_rows($queryyy);
 $hasl = mysqli_fetch_all($queryyy, MYSQLI_ASSOC); ?>     
@@ -135,7 +135,7 @@ $hasl = mysqli_fetch_all($queryyy, MYSQLI_ASSOC); ?>
             $totl = (float) $hasl[0]['total_qty']; 
         }
             ?>
-<?php $konek = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php $konek = mysqli_connect('localhost','root','','ganding');
 $querystokcoil =  mysqli_query($konek, "select * from warehouse where kodepart = '$kodepart' and unit = 'coil' and id_customer = $idcust ");
 $hitungstokcoil = mysqli_num_rows($querystokcoil);
 $hasilstokcoil = mysqli_fetch_all($querystokcoil, MYSQLI_ASSOC); ?> 
@@ -161,7 +161,7 @@ else {
     $konversi = 0;
 } ?>
 
-<?php $konek = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php $konek = mysqli_connect('localhost','root','','ganding');
 $querystokpcs =  mysqli_query($konek, "select * from warehouse where kodepart = '$kodepart' and unit = 'pcs' and id_customer = $idcust ");
 $hitungstokpcs = mysqli_num_rows($querystokpcs);
 $hasilstokpcs = mysqli_fetch_all($querystokpcs, MYSQLI_ASSOC); ?> 
@@ -171,7 +171,7 @@ $hasilstokpcs = mysqli_fetch_all($querystokpcs, MYSQLI_ASSOC); ?>
     $stokpcs = 0;
 } ?>
 
-<?php $konek = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php $konek = mysqli_connect('localhost','root','','ganding');
 $querystoktube =  mysqli_query($konek, "select * from warehouse where kodepart = '$kodepart' and unit = 'tube' and id_customer = $idcust ");
 $hitungstoktube = mysqli_num_rows($querystoktube);
 $hasilstoktube = mysqli_fetch_all($querystoktube, MYSQLI_ASSOC); ?> 
@@ -183,7 +183,7 @@ $hasilstoktube = mysqli_fetch_all($querystoktube, MYSQLI_ASSOC); ?>
     <?php $konversiakhir = floor($stokakhircoil + $konversi + $stokpcs + $stoktube); ?>
                     <td style="text-align:center;"><?= $konversiakhir; ?></td>
 
-<?php $kon = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php $kon = mysqli_connect('localhost','root','','ganding');
 $quer =  mysqli_query($kon, "select * from proses where id_part = $idpart ");
 $h = mysqli_num_rows($quer);
 $has = mysqli_fetch_all($quer, MYSQLI_ASSOC); ?>                
@@ -204,7 +204,7 @@ $has = mysqli_fetch_all($quer, MYSQLI_ASSOC); ?>
  ?>
                     <td style="text-align:center;"><?= $wip; ?></td>
 
-<?php $con = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php $con = mysqli_connect('localhost','root','','ganding');
 $que =  mysqli_query($con, "select * from warehousefg where id_part = $idpart ");
 $haaaa = mysqli_num_rows($que);
 $hasss = mysqli_fetch_all($que, MYSQLI_ASSOC); ?>   
@@ -245,7 +245,7 @@ $stokdiwelding = $qtydiwelding * $qtyneed;
 
                     
 
-<?php $coenn = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php $coenn = mysqli_connect('localhost','root','','ganding');
 $quen =  mysqli_query($coenn, "select * from po where no_po = '$kodepart' and tgl_po like '$tanggul%' and status = 'belum close' ");
 $haaaau = mysqli_num_rows($quen);
 $hasssu = mysqli_fetch_all($quen, MYSQLI_ASSOC); ?>   
@@ -260,7 +260,7 @@ $hasssu = mysqli_fetch_all($quen, MYSQLI_ASSOC); ?>
         $cektanggal = date('Y-m', strtotime('-1 month', strtotime($datawaktu)));
  ?>
 
-<?php $coenn = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
+<?php $coenn = mysqli_connect('localhost','root','','ganding');
 $querypolama =  mysqli_query($coenn, "select * from po where id_part = $idpart and tgl_po like '$cektanggal%' and status = 'belum close' ");
 $hitungpolama = mysqli_num_rows($querypolama);
 $hasilpolama = mysqli_fetch_all($querypolama, MYSQLI_ASSOC); ?>   

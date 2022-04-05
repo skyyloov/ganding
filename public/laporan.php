@@ -1,11 +1,11 @@
 <?php $proses=$_GET["proses"];?>
 <?php $tgl=$_GET["tgl"]; ?>
-<?php  $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding'); ?>
+<?php  $koneksi = mysqli_connect('localhost','root','','ganding'); ?>
 <?php  $querylaporan =  mysqli_query($koneksi, "select * from laporanproduksi where proses = '$proses' and tanggal like '$tgl%' ");
                       $hasillaporan = mysqli_fetch_all($querylaporan, MYSQLI_ASSOC);
                       $hitunglaporan = mysqli_num_rows($querylaporan); ?>
                       <?php if($hitunglaporan > 0){ ?>
-                        <a href="https://scmganding.site/public/cetaklaporan/<?= $proses; ?>/<?= $tgl; ?>" target="blank" class="btn btn-xs btn-warning" style="float:right;">Cetak Laporan</a>
+                        <a href="http://localhost:8080/gands/public/cetaklaporan/<?= $proses; ?>/<?= $tgl; ?>" target="blank" class="btn btn-xs btn-warning" style="float:right;">Cetak Laporan</a>
 <table class="table">
                                           <thead>
                                              <tr>

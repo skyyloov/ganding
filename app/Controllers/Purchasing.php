@@ -156,8 +156,7 @@ session()->setFlashdata('pesan','Data Supplier Berhasil Ditambahkan!');
             return redirect()->to('/buatposup')->withInput();
         }
 
-        $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
-        $query =  mysqli_query($koneksi, "select * from part where id = $tes[nama_part] ");
+        $query =  mysqli_query($this->koneksi, "select * from part where id = $tes[nama_part] ");
         $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC);
         foreach ($hasil as $item){
         $nama_part = $item['nama_part'];
@@ -169,7 +168,7 @@ session()->setFlashdata('pesan','Data Supplier Berhasil Ditambahkan!');
         $lebar = $item['lebar'];
         }
 
-        $quer =  mysqli_query($koneksi, "select * from supplier where id = $tes[nama_supplier] ");
+        $quer =  mysqli_query($this->koneksi, "select * from supplier where id = $tes[nama_supplier] ");
         $has = mysqli_fetch_all($quer, MYSQLI_ASSOC);
         foreach ($has as $it){
         $nama_supplier = $it['nama_supplier'];
@@ -279,8 +278,8 @@ elseif ($tes['unit_material']=='sheet') {
                     'tgl' => $date
                 ]);
 
-                   $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
-                   $query =  mysqli_query($koneksi, "select * from warehouse where kodepart = '$code' and id_customer = '$idcust' and unit = '$unit' ");
+        
+                   $query =  mysqli_query($this->koneksi, "select * from warehouse where kodepart = '$code' and id_customer = '$idcust' and unit = '$unit' ");
                    $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC); 
             $hitung = mysqli_num_rows($query);
             foreach ($hasil as $a) {
@@ -376,8 +375,8 @@ elseif ($tes['unit_material']=='sheet') {
                        'tgl' => $date
                    ]);
 
-                   $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
-                   $queryy =  mysqli_query($koneksi, "select * from warehouse where kodepart = '$code' and id_customer = '$idcust' and unit = '$unit' ");
+        
+                   $queryy =  mysqli_query($this->koneksi, "select * from warehouse where kodepart = '$code' and id_customer = '$idcust' and unit = '$unit' ");
                    $hasill = mysqli_fetch_all($queryy, MYSQLI_ASSOC); 
             $hitungg = mysqli_num_rows($queryy);
             foreach ($hasill as $a) {
@@ -438,7 +437,6 @@ elseif ($tes['unit_material']=='sheet') {
         }
         
         $history = $this->request->getPost();
-        $koneksi = mysqli_connect('localhost','n1775814_sony','918256ccd741','n1775814_ganding');
         $tglpo = $history['tgl_po'];
         $quantitypo = (int) $history['qty_po'];
         $quantity1 = (int) $history['qty_dtg1'];
@@ -496,7 +494,7 @@ elseif ($tes['unit_material']=='sheet') {
         if ($quantity2 ==0) {
             $tglbaru2 = 0000-00-00;
             
-            $queryrencana =  mysqli_query($koneksi, "select * from rencana where description = 'kedatangan kedua' and qty1 = '$code' and qty2 = '$no_po_supplier' ");
+            $queryrencana =  mysqli_query($this->koneksi, "select * from rencana where description = 'kedatangan kedua' and qty1 = '$code' and qty2 = '$no_po_supplier' ");
             $hitto = mysqli_num_rows($queryrencana);
 
             if ($hitto > 0) {
@@ -515,7 +513,7 @@ elseif ($tes['unit_material']=='sheet') {
         }else{
 
             $tglbaru2 = $history['tgl_dtg2'];
-            $queryrencana =  mysqli_query($koneksi, "select * from rencana where description = 'kedatangan kedua' and qty1 = '$code' and qty2 = '$no_po_supplier' ");
+            $queryrencana =  mysqli_query($this->koneksi, "select * from rencana where description = 'kedatangan kedua' and qty1 = '$code' and qty2 = '$no_po_supplier' ");
             $hitto = mysqli_num_rows($queryrencana);
 
             if ($hitto > 0) {
@@ -537,7 +535,7 @@ elseif ($tes['unit_material']=='sheet') {
         if ($quantity1 == 0) {
             $tglbaru1 = 0000-00-00;
             
-            $queryrencana =  mysqli_query($koneksi, "select * from rencana where description = 'kedatangan pertama' and qty1 = '$code' and qty2 = '$no_po_supplier' ");
+            $queryrencana =  mysqli_query($this->koneksi, "select * from rencana where description = 'kedatangan pertama' and qty1 = '$code' and qty2 = '$no_po_supplier' ");
             $hitto = mysqli_num_rows($queryrencana);
 
             if ($hitto > 0) {
@@ -556,7 +554,7 @@ elseif ($tes['unit_material']=='sheet') {
         }else{
 
             $tglbaru1 = $history['tgl_dtg1'];
-            $queryrencana =  mysqli_query($koneksi, "select * from rencana where description = 'kedatangan pertama' and qty1 = '$code' and qty2 = '$no_po_supplier' ");
+            $queryrencana =  mysqli_query($this->koneksi, "select * from rencana where description = 'kedatangan pertama' and qty1 = '$code' and qty2 = '$no_po_supplier' ");
             $hitto = mysqli_num_rows($queryrencana);
 
             if ($hitto > 0) {
