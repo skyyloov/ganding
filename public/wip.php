@@ -5,7 +5,7 @@
                       $hasil = mysqli_fetch_all($query, MYSQLI_ASSOC); ?>
 
 <div class="col-md-2">
- <a href="http://localhost:8080/gands/public/cetakwip/<?= $id; ?>" class="btn btn-xs btn-info mb-3" target="blank">Cetak Stok WIP</a>
+ <a href="http://localhost/gands/public/cetakwip/<?= $id; ?>" class="btn btn-xs btn-info mb-3" target="blank">Cetak Stok WIP</a>
 </div>
 
   <?php $noemoer=1; ?>

@@ -28,7 +28,7 @@
                           $namacustomer = "No Data Customer";
                         } ?>
 
-<a href="http://localhost:8080/gands/public/home/cetakrekapcust/<?= $nosurjal; ?>" style="float:right;" target="blank" class="btn btn-sm btn-warning">Cetak Rekap</a>
+<a href="http://localhost/gands/public/home/cetakrekapcust/<?= $nosurjal; ?>" style="float:right;" target="blank" class="btn btn-sm btn-warning">Cetak Rekap</a>
   <div class="d-flex bd-highlight">
   <div class="p-2 flex-grow-1 bd-highlight"><span style="text-align:center; font-size:17px;"><?= $namacustomer; ?></span></div>
   <div class="p-2 bd-highlight">Insterted At</div>

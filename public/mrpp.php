@@ -40,7 +40,7 @@ date_default_timezone_set('Asia/Jakarta');
                          
                       
 <a style="text-float:center;">  PO BULAN <?= $tanggul; ?>   </a>   
-<form action="http://localhost:8080/gands/public/home/cetakmrp" method="post">
+<form action="http://localhost/gands/public/home/cetakmrp" method="post">
     <input type="hidden" name="id" value="<?= $id; ?>">
     <input type="hidden" name="tanggal" value="<?= $tanggul; ?>">
     <button type="submit" style="float:right;" target="blank" class="btn btn-xs btn-warning"  name="submit" >Cetak MRP</button>

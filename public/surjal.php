@@ -23,7 +23,7 @@
                         } ?>
 
     <div class="col">
-        <form action="http://localhost:8080/gands/public/home/cetakrekapsup/" method="GET">
+        <form action="http://localhost/gands/public/home/cetakrekapsup/" method="GET">
         <input type="hidden" name="idsurjal" value="<?= $idsurjal; ?>">
         <input type="hidden" name="idsup" value="<?= $idsup; ?>">
             <button type="submit" style="float:right;" class="btn btn-sm btn-info">Cetak Rekap</button>

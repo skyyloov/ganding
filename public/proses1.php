@@ -11,7 +11,7 @@
             <h4 class="modal-title" id="myModalLabel" >Input Data Proses1 Part <?= $hasil[0]['nama_part']; ?></h4>
         </div>
         <div class="modal-body">
-        <form method="POST" action="http://localhost:8080/gands/public/production/input1" enctype="multipart/form-data" class="">
+        <form method="POST" action="http://localhost/gands/public/production/input1" enctype="multipart/form-data" class="">
                <div class="form-row">
 
                <div class="form-group col">
@@ -62,7 +62,7 @@
             <h4 class="modal-title" id="myModalLabel" >Input Data Proses2 Part <?= $hasil[0]['nama_part']; ?></h4>
         </div>
         <div class="modal-body">
-        <form method="post" action="http://localhost:8080/gands/public/production/input2" class="">
+        <form method="post" action="http://localhost/gands/public/production/input2" class="">
                <div class="form-row">
 
                <div class="form-group col">
@@ -111,7 +111,7 @@
             <h4 class="modal-title" id="myModalLabel" >Input Data Proses3 Part <?= $hasil[0]['nama_part']; ?></h4>
         </div>
         <div class="modal-body">
-        <form method="post" action="http://localhost:8080/gands/public/production/input3" class="">
+        <form method="post" action="http://localhost/gands/public/production/input3" class="">
                <div class="form-row">
 
                <div class="form-group col">
@@ -160,7 +160,7 @@
             <h4 class="modal-title" id="myModalLabel" >Input Data Proses4 Part <?= $hasil[0]['nama_part']; ?></h4>
         </div>
         <div class="modal-body">
-        <form method="post" action="http://localhost:8080/gands/public/production/input4" class="">
+        <form method="post" action="http://localhost/gands/public/production/input4" class="">
                <div class="form-row">
 
                <div class="form-group col">
@@ -209,7 +209,7 @@
             <h4 class="modal-title" id="myModalLabel" >Input Data Proses5 Part <?= $hasil[0]['nama_part']; ?></h4>
         </div>
         <div class="modal-body">
-        <form method="post" action="http://localhost:8080/gands/public/production/input5" class="">
+        <form method="post" action="http://localhost/gands/public/production/input5" class="">
                <div class="form-row">
 
                <div class="form-group col">
@@ -258,7 +258,7 @@
             <h4 class="modal-title" id="myModalLabel" >Input Data Proses6 Part <?= $hasil[0]['nama_part']; ?></h4>
         </div>
         <div class="modal-body">
-        <form method="post" action="http://localhost:8080/gands/public/production/input6" class="">
+        <form method="post" action="http://localhost/gands/public/production/input6" class="">
                <div class="form-row">
 
                <div class="form-group col">
@@ -307,7 +307,7 @@
             <h4 class="modal-title" id="myModalLabel" >Input Data Proses7 Part <?= $hasil[0]['nama_part']; ?></h4>
         </div>
         <div class="modal-body">
-        <form method="post" action="http://localhost:8080/gands/public/production/input7" class="">
+        <form method="post" action="http://localhost/gands/public/production/input7" class="">
                <div class="form-row">
 
                <div class="form-group col">
@@ -356,7 +356,7 @@
             <h4 class="modal-title" id="myModalLabel" >Input Data Proses SPOT Part <?= $hasil[0]['nama_part']; ?></h4>
         </div>
         <div class="modal-body">
-        <form method="post" action="http://localhost:8080/gands/public/production/inputspot" class="">
+        <form method="post" action="http://localhost/gands/public/production/inputspot" class="">
                <div class="form-row">
 
                <div class="form-group col-md-4">
@@ -422,7 +422,7 @@
             <h4 class="modal-title" id="myModalLabel" >Input Data Proses SPOT 2 Part <?= $hasil[0]['nama_part']; ?></h4>
         </div>
         <div class="modal-body">
-        <form method="post" action="http://localhost:8080/gands/public/production/inputspot2" class="">
+        <form method="post" action="http://localhost/gands/public/production/inputspot2" class="">
                <div class="form-row">
 
                <div class="form-group col-md-4">
@@ -499,9 +499,9 @@ $(document).ready(function(){
                 $(".checkbox").change(function() {
                     var data = 1;
                      if(this.checked) {
-                        $('.notgood').load('http://localhost:8080/gands/public/cekbox.php?idcek=' + data);
+                        $('.notgood').load('http://localhost/gands/public/cekbox.php?idcek=' + data);
                     } else {
-                        $('.notgood').load('http://localhost:8080/gands/public/cekbox.php?idcek2=' + data);
+                        $('.notgood').load('http://localhost/gands/public/cekbox.php?idcek2=' + data);
                     }
                 });
             });

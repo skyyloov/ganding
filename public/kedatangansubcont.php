@@ -10,7 +10,7 @@
             <h4 class="modal-title" id="myModalLabel" >Input Data Kedatangan Subcont <?= $hasil[0]['nama_part']; ?></h4>
         </div>
         <div class="modal-body">
-        <form method="POST" action="http://localhost:8080/gands/public/warehousefg/kedatangan" enctype="multipart/form-data" class="">
+        <form method="POST" action="http://localhost/gands/public/warehousefg/kedatangan" enctype="multipart/form-data" class="">
                <div class="form-row">
 
                <div class="form-group col">
@@ -72,9 +72,9 @@ $(document).ready(function(){
                 $(".checkbox").change(function() {
                     var data = 1;
                      if(this.checked) {
-                        $('.notgood').load('http://localhost:8080/gands/public/cekbox.php?idcek=' + data);
+                        $('.notgood').load('http://localhost/gands/public/cekbox.php?idcek=' + data);
                     } else {
-                        $('.notgood').load('http://localhost:8080/gands/public/cekbox.php?idcek2=' + data);
+                        $('.notgood').load('http://localhost/gands/public/cekbox.php?idcek2=' + data);
                     }
                 });
             });
